@@ -1,9 +1,7 @@
 ---
 layout: home
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "Introduction to Next Generation Sequencing in Galax by the HSPH Bioinformatics Core team."
+tags: [science, research, ngs, public health, sequencing, galaxy, course]
 image:
-  feature: sample-image-1.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: banner-dna.jpg
 ---

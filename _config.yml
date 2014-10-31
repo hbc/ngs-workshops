@@ -27,10 +27,11 @@ kramdown:
 
 # Site owner
 owner:
-  name: Bioinformatics Core
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
+  name: HBC
+  avatar: author-core.jpg
+  bio: "Bioinformatics support team at the Harvard School of Public Health. Focus on research computing, NGS and functional analysis."
+  email: ohofmann@hsph.harvard.edu
+  web: https://hsphbio.ghost.io/
   disqus-shortname: 
   twitter: #username
   facebook: #username
@@ -41,7 +42,7 @@ owner:
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
+  github: hbc
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   instagram: #username

@@ -1,14 +1,15 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: BillyRick
+oho:
+  name: Oliver Hofmann
+  tumblr: fiamh
+  email: ohofmann@hsph.harvard.edu
+  bio: "Director HBC, Senior Research Scientist, Harvard School of Public Health"
+  avatar: author-oho.jpg
+  twitter: fiamh
+  git: ohofmann
+  linkedin: ohofmann
+
 
 cornelius_fiddlebone:
   name: Cornelius Fiddlebone
