@@ -1,8 +1,9 @@
 # Site wide configuration
 
-title:            Site Title
+title:            HBC Bioinformatics Workshops
 locale:           en_US
-url:              http://localhost:4000
+#url:              http://hbc.github.io/ngs-workshops/
+#url:              http://localhost:4000
 
 
 # Jekyll configuration
@@ -26,7 +27,7 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Bioinformatics Core
   avatar: bio-photo.jpg
   bio: "Describe your self."
   email: 
