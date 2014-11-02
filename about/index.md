@@ -1,14 +1,12 @@
 ---
 layout: page
 title: About the site
-#author: oho
 tags: [about, introduction,hbc,support]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: false
 image:
-  feature: banner-browser.png
-  credit: Melissa Gymrek
-  creditlink: http://melissagymrek.com/pybamview/
+  feature: banner-dna-colour.jpg
+  credit: Taraki / Fotolia
 ---
 
 The sequencing workshops are run by the [Bioinformatics Core](https://hsphbio.ghost.io/) at the [Harvard School of Public Health](http://www.hsph.harvard.edu/), sponsored by the [Tools and Technology Program of Harvard Medical School](http://hms.harvard.edu/departments/tools-and-technology) and the [Harvard NeuroDiscovery Center](http://www.neurodiscovery.harvard.edu/).

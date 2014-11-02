@@ -29,7 +29,7 @@ kramdown:
 # Site owner
 owner:
   name: HBC
-  avatar: author-core.jpg
+  avatar: author-hbc.jpg
   bio: "Bioinformatics support team at the Harvard School of Public Health. Focus on research computing, NGS and functional analysis."
   email: ohofmann@hsph.harvard.edu
   web: https://hsphbio.ghost.io/
