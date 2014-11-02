@@ -26,9 +26,9 @@ We will be retracing most of the steps required to get from an Illumina FASTQ se
 #### Access to Galaxy
 {:.no_toc}
 
-Before tackling the modules below you should have a [working knowledge of Galaxy](http://scriptogr.am/ohofmann/intro-to-galaxy), understand how to find relevant tools, annotate your history or get new data sets from the data library.  As a result we will minimize the screenshots and pointers in these documents, focusing just on _what_ to do while guiding you through the process in class. As always, do ask questions and most importantly collaborate with your fellow students.
+Before tackling this module you should have a [working knowledge of Galaxy](http://scriptogr.am/ohofmann/intro-to-galaxy), understand how to find relevant tools, annotate your history or get new data sets from the data library.  As a result we will minimize the screenshots and pointers in these document, focusing just on _what_ to do while guiding you through the process in class. As always, do ask questions and most importantly collaborate with your fellow students.
 
-In order for you to be able to access Galaxy on your assigned dedicated machine on the Cloud, you have been given a web or IP address in the form of A.B.C.D where A, B, C and D are numbers separated by dots. You will find the current IP address at the top of our [resource page](http://scriptogr.am/ohofmann/resources). You will need it in order to access Galaxy from the web browser on your laptop. 
+In order for you to be able to access Galaxy on your assigned dedicated machine on the Cloud, you have been given a web or IP address in the form of A.B.C.D where A, B, C and D are numbers separated by dots. You will find the current IP address at the top of our [resource page](/resources). You will need it in order to access Galaxy from the web browser on your laptop. 
 
 
 #### Changes to the default Galaxy installation
