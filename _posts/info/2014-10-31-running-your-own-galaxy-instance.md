@@ -106,6 +106,9 @@ If, instead, you would like to use the data from our workshops there is an easie
 
     cm-acd17b4674b4fa6291f5fd0736de8e8d/shared/2012-11-02--19-47/
 
+**Note:** This instance is currently out of date and may not be available at the time of this writing. We are in the process of creating a current version.
+{: .notice}
+
 <figure>
 <img src="/images/screenshots/CloudMan_ShareInstance.png">
 <figcaption></figcaption>
