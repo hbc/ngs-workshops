@@ -31,16 +31,16 @@ And quite a few of these discrepancies arise due to a perceived need to come up 
 
 > "We went through the paper line by line, figure by figure," said Begley. "I explained that we re-did their experiment 50 times and never got their result. He said they'd done it six times and got this result once, but put it in the paper because it made the best story. It's very disillusioning."
 
-[Ionnidis et all](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/Introduction/Nat%20Genet%202009%20Ioannidis.pdf)[^1] (PDF) described similar findings in a survey of array data -- one of the best understood high-throughput data sources in bioinformatics -- published in Nature Genetics:
+[Ionnidis et all](/documents/introduction/Nat%20Genet%202009%20Ioannidis.pdf)[^1] (PDF) described similar findings in a survey of array data -- one of the best understood high-throughput data sources in bioinformatics -- published in Nature Genetics:
 
 > "One table or figure from each article was independently evaluated by two teams of analysts. We reproduced two analyses in principle and six partially or with some discrepancies; ten could not be reproduced."
-And a [Science Exchange Blog](http://blog.scienceexchange.com/2012/04/the-need-for-reproducibility-in-academic-research/) has additional examples if you are still curious.
+And the [Science Exchange Blog](http://blog.scienceexchange.com/2012/04/the-need-for-reproducibility-in-academic-research/) has additional examples if you are still curious.
 
 ### Keeping notes
 
 To avoid creating similar problems for your peers keeping notes on your work is paramount. If you are interested in the topic we recommend working through articles from [Titus Brown's blog](http://ivory.idyll.org/blog/) and familiarizing yourself with automated systems such as [IPython](http://ipython.org/) (web-based notebooks for Python), [knitr](http://yihui.name/knitr/) (dynamic reports in R) or initiatives such as [Sage's Synapse](https://synapse.sagebase.org/) (data repositories and workflow documentation). 
 
-In this course Galaxy, our analytical framework, will keep most of the notes for you. You will most likely still need to document additional work and keep track of files, papers and other documents. Whatever system you use for this is fine -- be it Evernote, GitHub, or a simple folder-based system recommend by [Bill Noble](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/Introduction/PLoS%20Comput%20Biol%202009%20Noble.pdf)[^2] (PDF)
+In this course Galaxy, our analytical framework, will keep most of the notes for you. You will most likely still need to document additional work and keep track of files, papers and other documents. Whatever system you use for this is fine -- be it Evernote, GitHub, or a simple folder-based system recommend by [Bill Noble](/documents/introduction/PLoS%20Comput%20Biol%202009%20Noble.pdf)[^2] (PDF)
 
 ### Dissemination
 
@@ -54,7 +54,7 @@ While keeping good notes is one thing, making them available along with primary 
 * the data necessary to run the pipeline;
 * some of the output data discussed in the paper.
 
-For this course almost all work we will be doing is captured automatically and can be shared with others through a simple URL, but as you start utilizing tools outside of Galaxy (or similar systems such as [GenePattern](genepattern.broadinstitute.org)) we strongly recommend to browse through some of these materials.
+For this course almost all work we will be doing is captured automatically and can be shared with others through a simple URL, but as you start utilizing tools outside of Galaxy (or similar systems such as [GenePattern](http://genepattern.broadinstitute.org)) we strongly recommend to browse through some of these materials.
 
 ## Contact information
 
