@@ -61,8 +61,6 @@ For this course almost all work we will be doing is captured automatically and c
 
 If you have any questions about the course materials do not hesitate to ask [Radhika Khetani](mailto:khetani.r@gmail.com) or  [Oliver Hofmann](mailto:ohofmann@hsph.harvard.edu) directly. You can also get hold of Oliver on [Twitter](https://twitter.com/fiamh) or _in emergencies_ give him a call at +1 617 365 0984. 
 
-test2
-
 [^1]: Ioannidis, John P A, David B Allison, Catherine A Ball, Issa Coulibaly, Xiangqin Cui, Aedín C Culhane, Mario Falchi, et al. “Repeatability of Published Microarray Gene Expression Analyses.” Nature Genetics 41, no. 2 (February 1, 2009): 149–155.
 [^2]: Noble, William Stafford. “A Quick Guide to Organizing Computational Biology Projects.” PLoS Computational Biology 5, no. 7 (June 30, 2009): e1000424.
 
