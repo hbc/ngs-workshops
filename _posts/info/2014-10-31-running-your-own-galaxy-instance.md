@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Running Your Own Galaxy Instance"
+title: "Running your own Galaxy instance"
 modified:
 categories: posts/
 excerpt:
@@ -23,11 +23,11 @@ date: 2014-10-31T22:24:42-04:00
 
 ## Local deployment
 
-Setting up a Galaxy server on your own laptop or desktop server is fairly straightforward by now and the [Galaxy wiki](http://wiki.g2.bx.psu.edu/Admin/Get%20Galaxy) has excellent documentation if you are running Linux or MacOS. What's more, the [Galaxy Toolshed](http://wiki.g2.bx.psu.edu/Tool%20Shed) allows you to deploy additional tools and software in a plug-and-play approach. This should be perfectly fine for smaller analytical tasks; comparing a small number of RNA-seq samples or running a handful of exome-seq data sets is very much feasible.
+Setting up a Galaxy server on your own laptop or desktop server is fairly straightforward by now and the [Galaxy wiki](https://wiki.galaxyproject.org/Admin/Get%20Galaxy) has excellent documentation if you are running Linux or MacOS. What's more, the [Galaxy Toolshed](https://wiki.galaxyproject.org/Tool%20Shed) allows you to deploy additional tools and software in a plug-and-play approach. This should be perfectly fine for smaller analytical tasks; comparing a small number of RNA-seq samples or running a handful of exome-seq data sets is very much feasible.
 
 ## In the cloud: Cloudman
 
-Eventually you will be involved in projects that you can no longer realistically handle on a desktop server. Other than working with your IT team to deploy a Galaxy server locally your best option is to make use of Amazon's [AWS environment](http://aws.amazon.com/). [CloudMan](http://wiki.g2.bx.psu.edu/CloudMan), the Galaxy version we have been using during this course, can now be set up very easily through [BioCloudCentral](https://biocloudcentral.herokuapp.com). This gives you access to a main Galaxy server of your choice, and you can add additional [worker nodes](http://usecloudman.org/) through CloudMan's administrative interface to speed up the data processing even further.
+Eventually you will be involved in projects that you can no longer realistically handle on a desktop server. Other than working with your IT team to deploy a Galaxy server locally your best option is to make use of Amazon's [AWS environment](http://aws.amazon.com/). [CloudMan](https://wiki.galaxyproject.org/CloudMan), the Galaxy version we have been using during this course, can now be set up very easily through [BioCloudCentral](https://biocloudcentral.herokuapp.com). This gives you access to a main Galaxy server of your choice, and you can add additional [worker nodes](http://usecloudman.org/) through CloudMan's administrative interface to speed up the data processing even further.
 
 ### 1. Signing up for AWS
 
@@ -121,7 +121,7 @@ As before, click on `Choose platform type`. The Galaxy instance that now launche
 
 We strongly recommend you work through the [Cloudman Wiki](http://wiki.g2.bx.psu.edu/CloudMan) to get a better understanding of how to increase the storage size, add additional CPUs (worker nodes), etc. If you want to learn more about AWS in general the [UC Davis Cloud Computing course](http://training.bioinformatics.ucdavis.edu/docs/2012/05/AWS/index.html) is very much worth the time investment.
 
-Note that now that Cloudman is running it automatically enables an [FTP account](http://wiki.g2.bx.psu.edu/FTPUpload) associated with your instance, allowing you to transfer larger data files straight into your user account; in particular, files larger than 50-100MB tend to be difficult to upload using a regular web browser.
+Note that now that Cloudman is running it automatically enables an [FTP account](https://wiki.galaxyproject.org/FTPUpload) associated with your instance, allowing you to transfer larger data files straight into your user account; in particular, files larger than 50-100MB tend to be difficult to upload using a regular web browser.
 
 Remember to **shut down your cluster** once you are done with the analysis. This will minimize incurred costs though you still will have to cover the storage charges. In return this allows you to come back at any time and re-start the Galaxy instance (as long as you give it the same name) which will resume with all your data, workflows and histories in place:
 
@@ -142,4 +142,4 @@ Remember to **shut down your cluster** once you are done with the analysis. This
 ### Cost
 
 
-A number of [AWS cost calculators](https://blog.cloudvertical.com/2012/10/aws-cost-cheat-sheet-2/) exist, but for bioinformatics data analysis your main contributes are going to be the overall CPU hours and the long-term storage cost of very large NGS data sets. Start with a small data set and some basic analysis to monitor your cost. Also take a look at [Cloudman's capacity planning summary](http://wiki.galaxyproject.org/CloudMan/CapacityPlanning).
+A number of [AWS cost calculators](https://blog.cloudvertical.com/2012/10/aws-cost-cheat-sheet-2/) exist, but for bioinformatics data analysis your main contributes are going to be the overall CPU hours and the long-term storage cost of very large NGS data sets. Start with a small data set and some basic analysis to monitor your cost. Also take a look at [Cloudman's capacity planning summary](https://wiki.galaxyproject.org/CloudMan/CapacityPlanning).
