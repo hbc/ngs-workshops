@@ -31,8 +31,6 @@ And quite a few of these discrepancies arise due to a perceived need to come up 
 
 > "We went through the paper line by line, figure by figure," said Begley. "I explained that we re-did their experiment 50 times and never got their result. He said they'd done it six times and got this result once, but put it in the paper because it made the best story. It's very disillusioning."
 
-TEST3
-
 [Ionnidis et all](../documents/introduction/Nat%20Genet%202009%20Ioannidis.pdf)[^1] (PDF) described similar findings in a survey of array data -- one of the best understood high-throughput data sources in bioinformatics -- published in Nature Genetics:
 
 > "One table or figure from each article was independently evaluated by two teams of analysts. We reproduced two analyses in principle and six partially or with some discrepancies; ten could not be reproduced."
@@ -42,7 +40,7 @@ TEST3
 
 To avoid creating similar problems for your peers keeping notes on your work is paramount. If you are interested in the topic we recommend working through articles from [Titus Brown's blog](http://ivory.idyll.org/blog/) and familiarizing yourself with automated systems such as [IPython](http://ipython.org/) (web-based notebooks for Python), [knitr](http://yihui.name/knitr/) (dynamic reports in R) or initiatives such as [Sage's Synapse](https://synapse.sagebase.org/) (data repositories and workflow documentation). 
 
-In this course Galaxy, our analytical framework, will keep most of the notes for you. You will most likely still need to document additional work and keep track of files, papers and other documents. Whatever system you use for this is fine -- be it Evernote, GitHub, or a simple folder-based system recommend by [Bill Noble](/documents/introduction/PLoS%20Comput%20Biol%202009%20Noble.pdf)[^2] (PDF)
+In this course Galaxy, our analytical framework, will keep most of the notes for you. You will most likely still need to document additional work and keep track of files, papers and other documents. Whatever system you use for this is fine -- be it Evernote, GitHub, or a simple folder-based system recommend by [Bill Noble](../documents/introduction/PLoS%20Comput%20Biol%202009%20Noble.pdf)[^2] (PDF)
 
 ### Dissemination
 
