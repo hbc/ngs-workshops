@@ -31,9 +31,9 @@ And quite a few of these discrepancies arise due to a perceived need to come up 
 
 > "We went through the paper line by line, figure by figure," said Begley. "I explained that we re-did their experiment 50 times and never got their result. He said they'd done it six times and got this result once, but put it in the paper because it made the best story. It's very disillusioning."
 
-TEST2
+TEST3
 
-[Ionnidis et all](/documents/introduction/Nat%20Genet%202009%20Ioannidis.pdf)[^1] (PDF) described similar findings in a survey of array data -- one of the best understood high-throughput data sources in bioinformatics -- published in Nature Genetics:
+[Ionnidis et all](../documents/introduction/Nat%20Genet%202009%20Ioannidis.pdf)[^1] (PDF) described similar findings in a survey of array data -- one of the best understood high-throughput data sources in bioinformatics -- published in Nature Genetics:
 
 > "One table or figure from each article was independently evaluated by two teams of analysts. We reproduced two analyses in principle and six partially or with some discrepancies; ten could not be reproduced."
 And the [Science Exchange Blog](http://blog.scienceexchange.com/2012/04/the-need-for-reproducibility-in-academic-research/) has additional examples if you are still curious.
