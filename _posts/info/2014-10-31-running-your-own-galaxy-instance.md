@@ -34,10 +34,10 @@ Eventually you will be involved in projects that you can no longer realistically
 In order to sign up to AWS you will need a credit card, an email account -- ideally your work email -- and a  phone. Navigate to the [AWS signup page](http://aws.amazon.com/account/) and click on `Sign Up`. In the following screen provide your email address and select `I am a new user`. Finally, decide on an AWS user name and a password. Note that this is your **AWS account password** and should be independent from any other password you use, including the password you will pick later on to log into your own Galaxy server:
 
 Test: {{ site.baseurl }}
-Testlink: [Foo]({{ site.baseurl}}bar)
+Testlink: [Foo]({{ site.baseurl}}/bar)
 
 <figure>
-<img src=“images/screenshots/AWS-Login.png">
+<img src=“{{ site.baseurl }}/images/screenshots/AWS-Login.png">
 <figcaption></figcaption>
 </figure>
 
