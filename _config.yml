@@ -2,8 +2,8 @@
 
 title:            HBC Bioinformatics Workshops
 locale:           en_US
-#url:              http://hbc.github.io/ngs-workshops
-baseurl:          /ngs-workshops
+url:              http://hbc.github.io/ngs-workshops
+#baseurl:          /ngs-workshops
 
 # Jekyll configuration
 
