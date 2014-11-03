@@ -9,8 +9,6 @@ image:
   credit: Taraki / Fotolia
 ---
 
-Test-2-3.
-
 The sequencing workshops are run by the [Bioinformatics Core](https://hsphbio.ghost.io/) at the [Harvard School of Public Health](http://www.hsph.harvard.edu/), sponsored by the [Tools and Technology Program of Harvard Medical School](http://hms.harvard.edu/departments/tools-and-technology) and the [Harvard NeuroDiscovery Center](http://www.neurodiscovery.harvard.edu/).
 
 Courses are being run as hands-on sessions with a focus on next-gen sequence data in public health and stem cell biology. We make use of the Galaxy framework to ensure little prior computational experience is required and to help establishing a few key concepts that are important to any computational research:

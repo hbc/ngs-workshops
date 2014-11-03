@@ -22,7 +22,7 @@ image:
 
 ## Galaxy
 
-The workshop sessions rely on [Galaxy](http://usegalaxy.org), an open-source framework for biomedical data analysis developed by the Galaxy Team at Penn State. We will work you through a few basic workflows, but the Galaxy wiki has dozens of additional [tutorials and screencasts](http://wiki.g2.bx.psu.edu/Learn/Screencasts) that are worth exploring.
+The workshop sessions rely on [Galaxy](http://usegalaxy.org), an open-source framework for biomedical data analysis developed by the Galaxy Team at Penn State. We will work you through a few basic workflows, but the Galaxy wiki has dozens of additional [tutorials and screencasts](https://wiki.galaxyproject.org/Learn/Screencasts) that are worth exploring.
 
 ### Galaxy installation for the course
 
@@ -33,7 +33,7 @@ Remember to register an account during your first visit as this will enable pers
 
 ### Public galaxy installations
 
-After the course you can pick from an extensive list of [public Galaxy instances](http://wiki.g2.bx.psu.edu/Public%20Galaxy%20Servers). Note that most public servers have strict limits on how much data you can store (a quota) which can be somewhat limiting when it comes to NGS analysis.
+After the course you can pick from an extensive list of [public Galaxy instances](https://wiki.galaxyproject.org/Public%20Galaxy%20Servers). Note that most public servers have strict limits on how much data you can store (a quota) which can be somewhat limiting when it comes to NGS analysis.
 
 ### Deploying your own Galaxy instance
 
