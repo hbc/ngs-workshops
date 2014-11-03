@@ -20,9 +20,9 @@ date: 2014-10-31T22:33:16-04:00
 </div>
 </section><!-- /#table-of-contents -->
 
-[Galaxy](http://usegalaxy.org) is an integrated tool management system with a user-friendly graphical user interface (GUI). It is designed for running multiple bioinformatics tools on genomic data in a single point-and-click environment. In this tutorial we are going to get acquainted with Galaxy. If you are interested in learning more about the system or setting up your own copy we have provided additional links to online courses and public instances on the [resource page](resources). 
+[Galaxy](http://usegalaxy.org) is an integrated tool management system with a user-friendly graphical user interface (GUI). It is designed for running multiple bioinformatics tools on genomic data in a single point-and-click environment. In this tutorial we are going to get acquainted with Galaxy. If you are interested in learning more about the system or setting up your own copy we have provided additional links to online courses and public instances on the [resource page](/resources). 
 
-This first session will familiarize you with the system, and we will be using the same principles during the various sequencing modules of the workshops. We’ll see how to access Galaxy from your machine, get oriented and perform some basic tasks. Because genomic data is usually very large and the bioinformatics tools which we use tend to take a very long time to execute, it is a good idea to be running the data analysis on a dedicated computer system as opposed to on your own laptop or machine. This is why in this tutorial series we will be using Galaxy running on a remote machine (“in the Cloud” using [Amazon's EC2 environment](http://aws.amazon.com/ec2/)) which has been set up for you. This environment on the Cloud will be accessible to you for the duration of this course. We will be providing [instructions](posts/running-your-own-galaxy-instance/) towards the end of the course on how to set up your own system using [CloudMan](http://usecloudman.org/) and get Galaxy running once this course is over.
+This first session will familiarize you with the system, and we will be using the same principles during the various sequencing modules of the workshops. We’ll see how to access Galaxy from your machine, get oriented and perform some basic tasks. Because genomic data is usually very large and the bioinformatics tools which we use tend to take a very long time to execute, it is a good idea to be running the data analysis on a dedicated computer system as opposed to on your own laptop or machine. This is why in this tutorial series we will be using Galaxy running on a remote machine (“in the Cloud” using [Amazon's EC2 environment](http://aws.amazon.com/ec2/)) which has been set up for you. This environment on the Cloud will be accessible to you for the duration of this course. We will be providing [instructions](/posts/running-your-own-galaxy-instance/) towards the end of the course on how to set up your own system using [CloudMan](http://usecloudman.org/) and get Galaxy running once this course is over.
 
 ## Accessing Galaxy
 
@@ -31,15 +31,15 @@ In order for you to be able to access Galaxy on your assigned dedicated machine 
 You will find the current IP address at the top of our [resource page](/resources). You will need it in order to access Galaxy from the web browser on your laptop. 
 {: .notice}
 
-> If you want to work through this session outside of this course, take a look at our section on [how to set up your own Galaxy server](posts/running-your-own-galaxy-instance/) or download the [complete introduction dataset](data/Galaxy_Introduction_files.tgz) (TGZ archive, 3MB) and use one of the public Galaxy instances.
+> If you want to work through this session outside of this course, take a look at our section on [how to set up your own Galaxy server](/posts/running-your-own-galaxy-instance/) or download the [complete introduction dataset](/data/Galaxy_Introduction_files.tgz) (TGZ archive, 3MB) and use one of the public Galaxy instances.
 
 ## The Galaxy interface
 
 Before we get going on an analysis, let's start with exploring what a Galaxy instance actually looks like. Open up a web browser of your choice, and enter the web or IP address given to you during the course into the Address Bar and press ENTER. You should see the main Galaxy screen as shown below. This example was run using the Google Chrome web browser. This is the main `Analyze data` window where data analysis is performed. You should see something similar to the following screenshot. 
 
 <figure>
-<a href="images/screenshots/GalaxyOverview.png">
-<img src="images/screenshots/GalaxyOverview.png">
+<a href="/images/screenshots/GalaxyOverview.png">
+<img src="/images/screenshots/GalaxyOverview.png">
 </a>
 <figcaption>The basic Galaxy interface</figcaption>
 </figure>
@@ -102,7 +102,7 @@ Go back to the main analysis page and you will find the gene list file in your c
 #### Data details
 {:.no_toc}
 
-Every history entry represents a unified collection of data (or a ‘dataset’), and each will have a number and a name. The numbers will incrementally increase as you perform new operations on your data and the data at each stage will be saved and made available to you in this pane. You can click on the name to expand, or collapse the history entry view. Once expanded, there are several buttons that are available next to the name that allow you to view the data (eye), to edit the parameters or attributes of this data (pencil), or delete it (X). 
+Every history entry represents a unified collection of data (or a ‘dataset’), and each will have a number and a name. The numbers will incrementally increase as you perform new operations on your data and the data at each stage will be saved and made available to you in this pane. You can click on the name to expand, or collapse the history entry view. Once expanded, there are several buttons that are available next to the name that allow you to view the data (eye), to edit the parameters or attributes of this data (pencil), or delete it (X)]. 
 
 There are also some additional buttons underneath the title that allow you to download the data (floppy drive), get more information (i), rerun this step (arrow) or several buttons which allow you to visualize this data. In addition, at the very bottom of this entry is a history mini-data view which only shows the first 6 data rows, and it is useful to get a general idea of how the data is structured. The gene information you imported is stored in [BED format](http://genome.ucsc.edu/FAQ/FAQformat.html#format1). Here you can see that the 1st column contains the chromosome name, the 2nd column contains the START and the 3rd column contains the END genomic location coordinates for a particular gene, etc. 
 
