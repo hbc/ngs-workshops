@@ -31,7 +31,7 @@ This page contains pointers to additional reading material and external resource
 
 ## Introduction
 
-* [Organizing your data](/documents/introduction/PLoS%20Comput%20Biol%202009%20Noble.pdf) (PDF)
+* [Organizing your data](../documents/introduction/PLoS%20Comput%20Biol%202009%20Noble.pdf) (PDF)
 * [Array reproducibilty](/documents/introduction/Nat%20Genet%202009%20Ioannidis.pdf) (PDF)
 * [Keith Baggerly video lecture](http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/)
 * [James Hadfield on better NGS experiments](http://core-genomics.blogspot.com/2012/10/how-to-do-better-ngs-experiments.html)
