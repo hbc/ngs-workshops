@@ -31,7 +31,7 @@ And quite a few of these discrepancies arise due to a perceived need to come up 
 
 > "We went through the paper line by line, figure by figure," said Begley. "I explained that we re-did their experiment 50 times and never got their result. He said they'd done it six times and got this result once, but put it in the paper because it made the best story. It's very disillusioning."
 
-[Ionnidis et all](../documents/introduction/Nat%20Genet%202009%20Ioannidis.pdf)[^1] (PDF) described similar findings in a survey of array data -- one of the best understood high-throughput data sources in bioinformatics, published in Nature Genetics:
+[Ionnidis et all](../documents/introduction/Nat%20Genet%202009%20Ioannidis.pdf)[^1] (PDF) described similar findings in a survey of array data -- one of the best understood high-throughput data sources in bioinformatics -- published in Nature Genetics:
 
 > "One table or figure from each article was independently evaluated by two teams of analysts. We reproduced two analyses in principle and six partially or with some discrepancies; ten could not be reproduced."
 
@@ -61,6 +61,7 @@ For this course almost all work we will be doing is captured automatically and c
 
 If you have any questions about the course materials do not hesitate to ask [Radhika Khetani](mailto:khetani.r@gmail.com) or  [Oliver Hofmann](mailto:ohofmann@hsph.harvard.edu) directly. You can also get hold of Oliver on [Twitter](https://twitter.com/fiamh) or _in emergencies_ give him a call at +1 617 365 0984. 
 
+test2
 
 [^1]: Ioannidis, John P A, David B Allison, Catherine A Ball, Issa Coulibaly, Xiangqin Cui, Aedín C Culhane, Mario Falchi, et al. “Repeatability of Published Microarray Gene Expression Analyses.” Nature Genetics 41, no. 2 (February 1, 2009): 149–155.
 [^2]: Noble, William Stafford. “A Quick Guide to Organizing Computational Biology Projects.” PLoS Computational Biology 5, no. 7 (June 30, 2009): e1000424.
