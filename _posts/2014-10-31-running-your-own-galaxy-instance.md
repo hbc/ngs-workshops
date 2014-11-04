@@ -2,7 +2,7 @@
 layout: post
 title: "Running your own Galaxy instance"
 modified:
-categories: posts/
+categories: courses/
 excerpt:
 tags: [aws, ec2, cloud, it, resource, tutorial]
 image:

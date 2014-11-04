@@ -37,7 +37,7 @@ After the course you can pick from an extensive list of [public Galaxy instances
 
 ### Deploying your own Galaxy instance
 
-While you can analyze smaller data sets on any of the public Galaxy instances most NGS projects tend to run into quota problems sooner rather than later. For that reason it might make sense to set up your own Galaxy instance. We have summarized the different options to [set up your own Galaxy instance](../posts/running-your-own-galaxy-instance/), but do not hesitate to contact us with questions.
+While you can analyze smaller data sets on any of the public Galaxy instances most NGS projects tend to run into quota problems sooner rather than later. For that reason it might make sense to set up your own Galaxy instance. We have summarized the different options to [set up your own Galaxy instance](../courses/running-your-own-galaxy-instance/), but do not hesitate to contact us with questions.
 
 ## Additional training materials
 
