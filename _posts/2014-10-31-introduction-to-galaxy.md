@@ -22,7 +22,7 @@ date: 2014-10-31T22:33:16-04:00
 
 [Galaxy](http://usegalaxy.org) is an integrated tool management system with a user-friendly graphical user interface (GUI). It is designed for running multiple bioinformatics tools on genomic data in a single point-and-click environment. In this tutorial we are going to get acquainted with Galaxy. If you are interested in learning more about the system or setting up your own copy we have provided additional links to online courses and public instances on the [resource page]({{ site.baseurl }}/resources). 
 
-This first session will familiarize you with the system, and we will be using the same principles during the various sequencing modules of the workshops. We’ll see how to access Galaxy from your machine, get oriented and perform some basic tasks. Because genomic data is usually very large and the bioinformatics tools which we use tend to take a very long time to execute, it is a good idea to be running the data analysis on a dedicated computer system as opposed to on your own laptop or machine. This is why in this tutorial series we will be using Galaxy running on a remote machine (“in the Cloud” using [Amazon's EC2 environment](http://aws.amazon.com/ec2/)) which has been set up for you. This environment on the Cloud will be accessible to you for the duration of this course. We will be providing [instructions](../posts/running-your-own-galaxy-instance/) towards the end of the course on how to set up your own system using [CloudMan](http://usecloudman.org/) and get Galaxy running once this course is over.
+This first session will familiarize you with the system, and we will be using the same principles during the various sequencing modules of the workshops. We’ll see how to access Galaxy from your machine, get oriented and perform some basic tasks. Because genomic data is usually very large and the bioinformatics tools which we use tend to take a very long time to execute, it is a good idea to be running the data analysis on a dedicated computer system as opposed to on your own laptop or machine. This is why in this tutorial series we will be using Galaxy running on a remote machine (“in the Cloud” using [Amazon's EC2 environment](http://aws.amazon.com/ec2/)) which has been set up for you. This environment on the Cloud will be accessible to you for the duration of this course. We will be providing [instructions]({{ site.baseurl }}/courses/running-your-own-galaxy-instance/) towards the end of the course on how to set up your own system using [CloudMan](http://usecloudman.org/) and get Galaxy running once this course is over.
 
 ## Accessing Galaxy
 
@@ -31,7 +31,7 @@ In order for you to be able to access Galaxy on your assigned dedicated machine 
 You will find the current IP address at the top of our [resource page](../resources). You will need it in order to access Galaxy from the web browser on your laptop. 
 {: .notice}
 
-> If you want to work through this session outside of this course, take a look at our section on [how to set up your own Galaxy server](../posts/running-your-own-galaxy-instance/) or download the [complete introduction dataset](../data/Galaxy_Introduction_files.tgz) (TGZ archive, 3MB) and use one of the public Galaxy instances.
+> If you want to work through this session outside of this course, take a look at our section on [how to set up your own Galaxy server]({{ site.baseurl }}/courses/running-your-own-galaxy-instance/) or download the [complete introduction dataset]({{ site.baseurl }}/data/Galaxy_Introduction_files.tgz) (TGZ archive, 3MB) and use one of the public Galaxy instances.
 
 ## The Galaxy interface
 
@@ -134,7 +134,7 @@ Here let’s change the name of this dataset to “UCSC Genes.” You can also s
   
 Frequently you will already have generated some data you want to utilize within Galaxy. One simple way to get data into the Galaxy system is by uploading your files to the server, either via FTP or (for smaller data sets) directly through the browser into the current history. To try this you first need to get a file onto your computer:
 
-* **DOWNLOAD** [this file](../data/ucsc_hg18_chrX.bed.txt) from our servers -- it contains the same information as the gene list you retrieved from the data library, but is limited to genes located on the X chromosome. 
+* **DOWNLOAD** [this file]({{ site.baseurl }}/data/ucsc_hg18_chrX.bed.txt) from our servers (right-click, save-as). It contains the same information as the gene list you retrieved from the data library, but is limited to genes located on the X chromosome. 
 * Take note of the download location
 
 After you have the file on your computer, then: 
@@ -422,7 +422,7 @@ On the next screen you have a choice to publish this history via an internet lin
 
 > The Galaxy team has [published the workflow history](http://main.g2.bx.psu.edu/u/aun1/p/heteroplasmy) used for the data analysis of *"Dynamics of mitochondrial heteroplasmy in three families"*. They processed reads, trimmed them, aligned them to a reference genome and called variants with pileup before filtering the pileup results. What reference genome did they align to, and during the pileup filtering step what was the lowest read coverage and base quality they accepted for called variants?
 
-You are done with the introduction! Move on to any of the other sequencing-related modules, take a look at the optional exercises below or [let us know](../about) if you have more questions.
+You are done with the introduction! Move on to any of the other sequencing-related modules, take a look at the optional exercises below or [let us know]({{ site.baseurl }}/about) if you have more questions.
 
 
 ## Exercises
