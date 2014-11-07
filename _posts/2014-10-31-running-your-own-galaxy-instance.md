@@ -34,11 +34,11 @@ Eventually you will be involved in projects that you can no longer realistically
 In order to sign up to AWS you will need a credit card, an email account -- ideally your work email -- and a  phone. Navigate to the [AWS signup page](http://aws.amazon.com/account/) and click on `Sign Up`. In the following screen provide your email address and select `I am a new user`. Finally, decide on an AWS user name and a password. Note that this is your **AWS account password** and should be independent from any other password you use, including the password you will pick later on to log into your own Galaxy server:
 
 <figure>
-<img src="{{ site.baseurl }}/images/screenshots/AWS-Login.png">
+<img src="{{ site.baseurl }}/images/screenshots/AWS-Login_new.png">
 <figcaption></figcaption>
 </figure>
 
-Work your way through the remaining forms which include signing off on the AWS Customer Agreement and click on `Create Account and Continue`. You will now need to provide credit card details. You will be charged $1 as a test of the card, but otherwise no charges occurr until you actuall start a server. To confirm that you actually authorized the account creation work through the authorization process; this is usuall done via phone: provide a phone number, wait for the call, enter the PIN displayed on the webpage. Your account will now be validated:
+Work your way through the remaining forms which include signing off on the AWS Customer Agreement and click on `Create Account and Continue`. You will now need to provide credit card details. You will be charged $1 as a test of the card, but otherwise no charges occur until you actually start a server. To confirm that you actually authorized the account creation work through the authorization process; this is usually done via phone: provide a phone number, wait for the call, enter the PIN displayed on the webpage. Your account will now be validated:
 
 <figure>
 <img src="{{ site.baseurl }}/images/screenshots/AWS_Active.png">
@@ -48,16 +48,32 @@ Work your way through the remaining forms which include signing off on the AWS C
 You will receive a confirmation email from Amazon at which point you can log in:
 
 <figure>
-<img src="{{ site.baseurl }}/images/screenshots/AWS_LoggedIn.png">
+<img src="{{ site.baseurl }}/images/screenshots/AWS_LoggedIn_new.png">
 <figcaption></figcaption>
 </figure>
 
-Now you are almost done. Go to `My Account / Console` and find `Security Credentials`. On the following page find the `Access Credentials` section which should list your active account along with an `Access Key ID`. Note it down, then click on `Show` underneath the `Secret Access Key`. Copy and paste that to a text document as well, you will need both to start your own Cloudman instance:
+Now you are almost done. Click on the arrow next to your name on the top right hand corner and find `Security Credentials`:
 
 <figure>
-<img src="{{ site.baseurl }}/images/screenshots/AWS_Access.png">
+<img src="{{ site.baseurl }}/images/screenshots/AWS_LoggedIn_new2.png">
 <figcaption></figcaption>
 </figure>
+
+On the following page you will get a note about AWS best practices and Access Management, click `Continue to Security Credentials` to continue. Once on the Security Cerdentials page, view the options available under `Access Keys (...` by clicking on the `+` sign:
+
+<figure>
+<img src="{{ site.baseurl }}/images/screenshots/AWS_Access-1_new.png">
+<figcaption></figcaption>
+</figure>
+
+Click on `Create New Access Key` to get an `Access Key ID` and a `Secret Access Key`:
+
+<figure>
+<img src="{{ site.baseurl }}/images/screenshots/AWS_Access-2_new.png">
+<figcaption></figcaption>
+</figure>
+
+Note down both the Key ID string and the Access Key information, or even better would be to download them by clicking on `Download Key File` and saving them in a secure location, you will need both to start your own Cloudman instance.
 
 ### 2. Starting Cloudman
 
@@ -84,7 +100,7 @@ Next, click on `Show advanced startup options`, click on the little blue arrows 
 <figcaption></figcaption>
 </figure>
 
-If you now click on `Start an Instance` BioCloudCentral will get to work and provide you with a link to your own Cloudman instance after a minute or two: 
+If you now click on `Start an Instance` BioCloudCentral will get to work and provide you with a link to your own Cloudman instance after a few minutes: 
 
 <figure>
 <img src="{{ site.baseurl }}/images/screenshots/CloudMan_IP.png">
@@ -100,7 +116,7 @@ Clicking on the IP address link will take you to your new server; use the cluser
 <figcaption></figcaption>
 </figure>
 
-About 20-30GB should get you started, and you can always increase this later on. Clicking on `Choose platform type` should launch the system. If all you need is access to your Galaxy environment, wait until the `Applications` and `Data` status lights turn green and click on `Access Galaxy` -- you are all set. 
+About 20-30GB should get you started, and you can always increase this later on. Clicking on `Choose platform type` should launch the system. If all you need is access to your Galaxy environment, wait until the `Applications` and `Data` status lights (found by `Service status:`) turn green and click on `Access Galaxy` -- you are all set. 
 
 If, instead, you would like to use the data from our workshops there is an easier way than downloading everything to your local machine, then uploading it to AWS. We have created a 'shared image' which has all the data, published histories and workflows for you to explore. Rather than entering the amount of storage required pick 'Show more startup options and find the `Share-an-instance Cluster` field. In this field, cut and paste the following string which identifies the workshop data file:
 
