@@ -1,0 +1,7 @@
+Unique	0
+Duplicate	0
+Unaligned	0
+Vendor Failed	0
+Estimated Library Size	0
+Duplicate Inconsistency	0
+Unpaired Reads	109437787

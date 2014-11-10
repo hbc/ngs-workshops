@@ -1,0 +1,11 @@
+PASS	Basic Statistics	7_100326_FC6107FAAXX-chr22.fastq
+FAIL	Per base sequence quality	7_100326_FC6107FAAXX-chr22.fastq
+PASS	Per sequence quality scores	7_100326_FC6107FAAXX-chr22.fastq
+PASS	Per base sequence content	7_100326_FC6107FAAXX-chr22.fastq
+PASS	Per base GC content	7_100326_FC6107FAAXX-chr22.fastq
+WARN	Per sequence GC content	7_100326_FC6107FAAXX-chr22.fastq
+PASS	Per base N content	7_100326_FC6107FAAXX-chr22.fastq
+PASS	Sequence Length Distribution	7_100326_FC6107FAAXX-chr22.fastq
+FAIL	Sequence Duplication Levels	7_100326_FC6107FAAXX-chr22.fastq
+PASS	Overrepresented sequences	7_100326_FC6107FAAXX-chr22.fastq
+WARN	Kmer Content	7_100326_FC6107FAAXX-chr22.fastq
