@@ -80,44 +80,41 @@ Note down both the Key ID string and the Access Key information, or even better 
 [BioCloudCentral](https://biocloudcentral.herokuapp.com/) dramatically simplifies the process of starting Cloudman, but it does require some basic information to be filled in:
 
 <figure>
-<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Start.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Start-new.png">
 <figcaption></figcaption>
 </figure>
 
 To start with you need to provide:
 
-* `Cluster name`: Pick any name you like. If you shut down your server at the end of your project all data will be saved and associated with this name unless you ask for it to be delected. If at some point you need to continue with your project you can continue where you stopped by providing the same cluster name
-* `Password`: Pick a password. This will be needed to log into Cloudman and should be different from your AWS password
 * `Cloud`: Leave to the default `Amazon (AWS EC2)`
 * `Access Key`: Cut and paste the access key from your AWS account page
 * `Secret Key`: Cut and paste your secret key from your AWS account page
+* `Institutional email`: Provide an email address
+* `Cluster name`: Pick any name you like. You will be prompted for this when you log into Cloudman. If you shut down your server at the end of your project all data will be saved and associated with this name unless you ask for it to be deleted. If at some point you need to continue with your project you can continue where you stopped by providing the same cluster name
+* `Password`: Pick a password. You will be prompted for this to log into Cloudman and should be different from your AWS password
 * `Instance type`: This determines the server size (CPUs, memory, etc.), but also your cost. Start with the `Medium` instance; you can always add more worker nodes once Cloudman is up and running
-
-Next, click on `Show advanced startup options`, click on the little blue arrows next to `Placement` and wait for the field to populate. From the dropdown menu pick ``
-
-<figure>
-<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Placement.png">
-<figcaption></figcaption>
-</figure>
 
 If you now click on `Start an Instance` BioCloudCentral will get to work and provide you with a link to your own Cloudman instance after a few minutes: 
 
 <figure>
-<img src="{{ site.baseurl }}/images/screenshots/CloudMan_IP.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_IP-new.png">
 <figcaption></figcaption>
 </figure>
 
 ### 3. Configuring Cloudman
+Clicking on the IP address link will take you to your new server; use the cluster name and password you just set up to log in. 
 
-Clicking on the IP address link will take you to your new server; use the cluser name and password you just set up to log in. Cloudman will ask you how much storage space to set aside to begin with as part of the `Galaxy Cluster` option:
+#### A. Setting up your own instance
+Cloudman will ask you how much storage space to set aside to begin with as part of the `Galaxy Cluster` option:
 
 <figure>
-<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Setup.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Setup-new.png">
 <figcaption></figcaption>
 </figure>
 
 About 20-30GB should get you started, and you can always increase this later on. Clicking on `Choose platform type` should launch the system. If all you need is access to your Galaxy environment, wait until the `Applications` and `Data` status lights (found by `Service status:`) turn green and click on `Access Galaxy` -- you are all set. 
 
+#### B. Use data from our workshop
 If, instead, you would like to use the data from our workshops there is an easier way than downloading everything to your local machine, then uploading it to AWS. We have created a 'shared image' which has all the data, published histories and workflows for you to explore. Rather than entering the amount of storage required pick 'Show more startup options and find the `Share-an-instance Cluster` field. In this field, cut and paste the following string which identifies the workshop data file:
 
     cm-acd17b4674b4fa6291f5fd0736de8e8d/shared/2012-11-02--19-47/
