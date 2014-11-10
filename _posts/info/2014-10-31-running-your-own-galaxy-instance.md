@@ -93,7 +93,7 @@ If you now click on `Start an Instance` BioCloudCentral will get to work and pro
 
 ### 3. Configuring Cloudman
 
-Clicking on the IP address link will take you to your new server; use the cluser name and password you just set up to log in. Cloudman will ask you how much storage space to set aside to begin with as part of the `Galaxy Cluster` option:
+Clicking on the IP address link will take you to your new server; use the user name and password you just set up to log in. Cloudman will ask you how much storage space to set aside to begin with as part of the `Galaxy Cluster` option:
 
 <figure>
 <img src="/images/screenshots/CloudMan_Setup.png">
