@@ -44,7 +44,9 @@ Before we get going on an analysis, let's start with exploring what a Galaxy ins
 <figcaption>The basic Galaxy interface</figcaption>
 </figure>
 
-The main page is composed of four primary sections:1. The center page (orange) is where you will be viewing the data and entering parameter values when running tools. Now you don’t see anything because we haven’t loaded any data and we didn’t run any tools yet. 
+The main page is composed of four primary sections:
+
+1. The center page (orange) is where you will be viewing the data and entering parameter values when running tools. Now you don’t see anything because we haven’t loaded any data and we didn’t run any tools yet. 
 2. The left column (blue) is where all of the tools and commands are located, grouped by major headings. You will be selecting tools from here when loading and analyzing data. 
 3. The right column (green) is where a history of all the commands that were run are logged. The history is a very powerful feature of Galaxy which allows you to keep track of the steps that were undertaken from the very beginning of loading data, to the very last analysis step. We will see later on how to share your history with your collaborators and how to create workflows from them. Once again, the history is empty because we haven’t run any tools yet.  
 4. The very top of the window (red) contains several menus which allow you to move away from this main `Analyze data` page. You can move from one view to another without losing any of your data. We’ll be using some of the other Galaxy functionality offered here in future tutorials. 
@@ -172,7 +174,10 @@ To find these genes, you will need to manipulate the data by sorting, filtering 
 {: .no_toc}
 
 You already uploaded a chromosome X gene dataset to Galaxy, representing all genes annotated in the UCSC gene model collection. Let’s simplify the data by only keeping the _UCSC gene names_, their _chromosomal locations_, the _strand_ on which they are located and the **exon counts** on this chromosome. This will require a combination of filtering our BED file followed by data aggregation (summing up the exons). To keep only the data we need, we’ll cut out the columns with this information and discard the rest. 
-1. Click on `Text Manipulation` in the tool pane, and then select the `Cut` tool. This tool will extract the columns we want and create a new dataset from them. 2. In the tool parameters, in `Cut Columns`, type in `c1,c2,c3,c6,c4,c10`. **Notice that the selected  columns are not in order**, we can reorder the columns any way we like. In this case we are placing the strand (column 6) _before_ the gene ID (column 4). 3. Make sure that`From` contains our uploaded (smaller) dataset. Tools display all valid input files, always make sure the selected data sets are the ones you want to work on.
+
+1. Click on `Text Manipulation` in the tool pane, and then select the `Cut` tool. This tool will extract the columns we want and create a new dataset from them. 
+2. In the tool parameters, in `Cut Columns`, type in `c1,c2,c3,c6,c4,c10`. **Notice that the selected  columns are not in order**, we can reorder the columns any way we like. In this case we are placing the strand (column 6) _before_ the gene ID (column 4). 
+3. Make sure that`From` contains our uploaded (smaller) dataset. Tools display all valid input files, always make sure the selected data sets are the ones you want to work on.
 4. Press `Execute`. You should get a now have a new dataset in your history numbered as `3`. 
 
 <figure>
@@ -212,7 +217,8 @@ If the `Cut` tool has not already converted the dataset to `Interval`, then do s
 
 Now let’s filter our data to only contain short genes, i.e. those that have a maximum  number of exons. Let’s say we only want to see those genes that have at most _two_ exons. 
 
-1. Click on the `Filter and sort` tool heading, and select the `Filter` tool. 2. Select the appropriate dataset (the latest concise, cut one, whatever you decided to call it) in `Filter`
+1. Click on the `Filter and sort` tool heading, and select the `Filter` tool. 
+2. Select the appropriate dataset (the latest concise, cut one, whatever you decided to call it) in `Filter`
 3. Provide a condition by typing in `c6<=2`. This conditions means, select _only those rows_ (genes) in our dataset whose column 6 (exon count) is less than or equal to 2. 
 4. Click on `Execute`. 
 
@@ -228,15 +234,38 @@ This will create a new dataset which should contain only a subset of the genes.
 > How many genes remain? Galaxy's mini summary will also tell you the size of your new data set relative to the old one. To what percentage did you reduce your initial data set?
 
 > You uploaded only genes located on chrX from your local drive. Could you have used the `Filter` tool to do the same?
-Click on the eye tool on this new dataset, and you’ll see that column 6 (exon count) in this file has values of 1 or 2, which means it worked! Once again, rename this dataset and give it a useful name, such as _"chrX genes <=2 exons"_. 
+
+Click on the eye tool on this new dataset, and you’ll see that column 6 (exon count) in this file has values of 1 or 2, which means it worked! Once again, rename this dataset and give it a useful name, such as _"chrX genes <=2 exons"_. 
+
+#### Get flanking regions
+Our goal has been to find potential eQTLs, using SNPs in promoters as an initial group of interest. To do so, we'll need to identify promotor regions (i.e., upstream regions) of our short genes on chromosome X. To obtain the coordinates of the upstream flanking regions: 
+
+1. Select the `Operate on genomic intervals` tool heading and click on the `Get Flanks` tool
+2. Under `Select data`, select your dataset which contains chromosome X genes with two or fewer exons
+3. Under `Region`, keep the option at `Whole Feature` and keep the option of `Upstream` under `Location of flanking regions`
+4. Keep an `Offset` of 0, but increase the `Length of flanking region` to 500
+5. Click `Execute`
+
+<figure>
+<a href="{{ site.baseurl }}/images/screenshots/GalaxyGetFlanks.png">
+<img src="{{ site.baseurl }}/images/screenshots/GalaxyGetFlanks.png">
+</a>
+<figcaption>Get flanking regions</figcaption>
+</figure>
+
+You can now rename the resulting new dataset to something like “Flanks 500bp upstream of chrX genes with <=2 exons”. 
+
 
 ### Data integration
 
-Now that we've got our list of short genes on the X chromosome and their locations, lets pull in a list of SNPs and their locations. We will import a list of SNPs and their locations, and then join this dataset with our short genes on the X-chromosome dataset. For this, we first need to import the [SNPs](http://en.wikipedia.org/wiki/Single-nucleotide_polymorphism) dataset. Let's use the most up to date SNP build for our genome build (hg18), [SNP build 130](http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=130).
-#### Online Data Repositories
+Now that we've got our list of short genes on the X chromosome and coordinates of their upstream promotor regions, lets pull in a list of SNPs and their locations. We will import a list of SNPs and their locations, and then join this dataset with our short genes on the X-chromosome dataset. For this, we first need to import the [SNPs](http://en.wikipedia.org/wiki/Single-nucleotide_polymorphism) dataset. Let's use the most up to date SNP build for our genome build (hg18), [SNP build 130](http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=130).
+
+#### Online Data Repositories
 {: .no_toc}
 
-We can find this kind of data in the [UCSC Table Browser](http://genome.ucsc.edu/cgi-bin/hgTables?command=start). This electronic resource is part of the [Genome Browser](http://genome.ucsc.edu/) at University of California at Santa Cruz, a major genomics research institution that has become a world-wide standard genomics data repository. This online resource allows researchers to both visualize genomic data and obtain official, curated and published genomic sequence data.1. Select the `Get Data` tool heading and select the `UCSC Main table browser` subheading. 
+We can find this kind of data in the [UCSC Table Browser](http://genome.ucsc.edu/cgi-bin/hgTables?command=start). This electronic resource is part of the [Genome Browser](http://genome.ucsc.edu/) at University of California at Santa Cruz, a major genomics research institution that has become a world-wide standard genomics data repository. This online resource allows researchers to both visualize genomic data and obtain official, curated and published genomic sequence data.
+
+1. Select the `Get Data` tool heading and select the `UCSC Main table browser` subheading. 
 2. On the first line of the UCSC Table Browser view, select: `Clade`:"Mammal", `Genome`:"Human", `Assembly`:"Mar. 2006 (NCBI36/hg18)"
 3. On the second line, select: `Group`:"Variation and Repeats", `Track`:"SNPs (130)"
 4. On the third line, confirm: `Table`:"snp130" -- take a look at `describe table schema` to learn more about the data set
@@ -274,23 +303,11 @@ You can now click on the history name `UCSC Main on Human` where you can see mor
 
 ### Intersecting genomic regions
 
-Now that we have a our datasets ready we can tackle a the somewhat more involved data intersection steps and visualize the results. There are quite a few tools within the Galaxy system -- and do feel free to explore as much as you like -- but here we will just show you one example of what can be done. 
+Now that we have our datasets ready, we can tackle the somewhat more involved data intersection steps and visualize the results. There are quite a few tools within the Galaxy system -- and do feel free to explore as much as you like -- but here we will just show you one example of what can be done. 
 
-Our goal has been to find potential eQTLs, using SNPs in promoters as an initial group of interest. To do so, we'll need to find SNPs that are in the promoters (i.e., upstream regions) of our short genes on chromosome X. We will first need to obtain the coordinates of the upstream flanking regions, then we will join the two datasets (SNPs and promoter regions) to see whether they have an intersection and where those intersections lie.1. Select the `Operate on genomic intervals` tool heading and click on the `Get Flanks` tool
-2. Under `Select data`, select your dataset which contains chromosome X genes with two or fewer exons
-3. Under `Region`, keep the option at `Whole Feature` and keep the option of `Upstream` under `Location of flanking regions`
-4. Keep an `Offset` of 0, but increase the `Length of flanking region` to 500
-5. Click `Execute`
 
-<figure>
-<a href="{{ site.baseurl }}/images/screenshots/GalaxyGetFlanks.png">
-<img src="{{ site.baseurl }}/images/screenshots/GalaxyGetFlanks.png">
-</a>
-<figcaption>Get flanking regions</figcaption>
-</figure>
-
-You can now rename the resulting new dataset to something like “Flanks 500bp upstream of chrX genes with <=2 exons”. Now we can join this dataset with our SNPs dataset. 1. Under the `Operate on genomic intervals` tool heading, select the `Join` tool
-2. For the `Join` dataset chose the dataset that contains the SNPs
+1. Under the `Operate on genomic intervals` tool heading, select the `Join` tool
+2. For the `Join` dataset choose the dataset that contains the SNPs
 3. For the `with`dataset choose the dataset that contains the upstream flanking regions 
 4. You can choose a larger Minimum Overlap, but as SNPs are only a single bp in length, keep it at the default of 1. 
 5. Double-check that you selected the right files
@@ -333,7 +350,8 @@ Any time that you have a file in BED format (this is the format that we download
 </a>
 <figcaption>Visualization options</figcaption>
 </figure>
-You can see right under the title that the format is “bed”, so it can be easily visualized from this box. You will see a line which says `display at UCSC`. Click on `Main`. This will open up a new internet browser window or tab which will take you directly to the UCSC Genome Browser where you can view the data that we have just uploaded. 
+
+You can see right under the title that the format is “bed”, so it can be easily visualized from this box. You will see a line which says `display at UCSC`. Click on `Main`. This will open up a new internet browser window or tab which will take you directly to the UCSC Genome Browser where you can view the data that we have just uploaded. 
 
 <figure>
 <a href="{{ site.baseurl }}/images/screenshots/UCSCView.png">
@@ -347,7 +365,10 @@ In addition to the data you just submitted to the browser (orange), the UCSC sys
 
 #### Converting data for visualization
 {: .no_toc}
-We can use this approach to visualize any BED files you may have, but what do we do about the other datasets which have that are not in BED format? We will have to create custom tracks for them by using special Galaxy tools.  Let’s say that in addition to the genes, we wish to view the upstream flanking regions of those genes, the SNPs, and finally, highlight the SNPs contained within the promoters. 
+
+We can use this approach to visualize any BED files you may have, but what do we do about the other datasets which have that are not in BED format? We will have to create custom tracks for them by using special Galaxy tools.  
+
+Let’s say that in addition to the genes, we wish to view the upstream flanking regions of those genes, the SNPs, and finally, highlight the SNPs contained within the promoters. 
 
 1. Select the `Graph / display data` tool heading and select the `Build Custom Track for UCSC genome browser` tool
 2. Click the `Add new Track` button
@@ -400,7 +421,8 @@ Keep in mind your history **only persists if you are logged in**. If you click o
 </a>
 <figcaption>Storing histories</figcaption>
 </figure>
-This should bring you to a list that looks like this: 
+
+This should bring you to a list that looks like this: 
 
 <figure>
 <a href="{{ site.baseurl }}/images/screenshots/GalaxyHistoryList.png">
