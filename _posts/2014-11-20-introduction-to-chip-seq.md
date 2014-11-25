@@ -64,7 +64,7 @@ This is the kind of data you would expect to receive from your sequencing core f
 
 > Take a look at the file contents using Galaxy's preview and file view functionality. What additional information does FASTQ contain over FASTA? How many reads are in your file? Pick the first sequence in your FASTQ file and note the identifier. What is the quality score of it's first and last nucleotide, respectively?
 
-## Quality Controls
+## Quality controls
 
 The FASTQ file contains output reads from the sequencer that need to be mapped to a reference genome for us to understand where those reads came from on the sequenced genome. However, before we can delve into read mapping, we first need to make sure that our preliminary data is of sufficiently high quality. This involves several steps:
 
@@ -76,7 +76,7 @@ The FASTQ file contains output reads from the sequencer that need to be mapped t
 
 Iterate through steps 2-5 until the data is of sufficient quality before proceeding to mapping.
 
-### Obtain Quality Statistics
+### Obtain quality statistics
 {:.no_toc}
 
 While Galaxy has a number of different methods to assess sequence properties you will want to stick to using a standard QC tool such as [FASTQC](http://www.bioinformatics.bbsrc.ac.uk/projects/fastqc/ ) in most cases. 
@@ -121,7 +121,7 @@ After reviewing the quality diagnostics from your FASTQC report, choose an appro
 > Do you have an improvement in read quality? What has changed and why? What percentage of reads did you retain at your cutoff?
 
 
-### Read Trimming
+### Read trimming
 {:.no_toc}
 
 After the general filtering which removes sequence reads of overall low quality it can be a good idea to trim the end of your reads, cutting away nucleotides at the end that are still of low-quality
@@ -142,7 +142,7 @@ Next we are going to look at the steps we need to take once we have a clean, fil
 
 If for some reason any of the previous steps did not work you can retrieve a quality-controlled, trimmed and filtered FASTQ file from the `Data Library` in the `ChIP-Seq Data` library, subfolder `Sequence and reference data` (`H1hesc_Input_Rep1_chr12_qualityfiltered.fastq`).
 
-### Load the filtered FASTQ file and Reference Genome
+### Load the filtered FASTQ file and reference genome
 {:.no_toc}
 
 To avoid excessive runtimes during later steps we will not align the reads against the whole human genome, just `chr12:1,000,000-33,800,000`. We have retrieved the sequence for this chromosome from UCSC GoldenPath (hg19) and added it to the "Data Library". This means we won't use the pre-built genome indices, but submit our own reference sequence. We are also using only a subset of reads from a single sample for the next few steps.
@@ -154,7 +154,7 @@ To avoid excessive runtimes during later steps we will not align the reads again
 Using it generates a slight time overhead since the reference genome needs to be indexed prior to each alignment run, but this is acceptable for now.
 
 
-### Perform Read Alignment
+### Perform read alignment
 {:.no_toc}
 
 You will start by aligning your reads to chr12 using a standard aligner, `Bowtie`. If you'd like to learn more about its underlying algorithm, advantages and drawbacks a recent [review from Bao et al](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/Exome%20Seq/J%20Hum%20Genet%202011%20Bao.pdf) (PDF) might be of interest. It also references the original paper which walks you through the methods.
