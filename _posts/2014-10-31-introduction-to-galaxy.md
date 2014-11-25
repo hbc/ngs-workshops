@@ -196,11 +196,11 @@ It is always a good idea to rename your datasets as they are created to make sur
 #### Converting data types
 {: .no_toc}
 
-For the purposes of this tutorial, we’ll be needing this dataset in `Interval` format. If you remember, the gene list is being represented in `BED` format. You can perform this kind of conversation of data formats right in the history section using the pencil tool. The `Cut` tool has probably already converted the dataset to `Interval`, but have a look at the options available.
+For the purposes of this tutorial, we’ll be needing this dataset in `Interval` format. If you remember, the gene list is being represented in `BED` format. You can perform this kind of conversion of data formats right in the history section using the pencil tool and clicking on the `Convert Format` tab in the main panel. The `Cut` tool has probably already converted the dataset to `Interval`, but have a look at the options available.
 
 <figure>
-<a href="{{ site.baseurl }}/images/screenshots/GalaxyFormatConversion.png">
-<img src="{{ site.baseurl }}/images/screenshots/GalaxyFormatConversion.png">
+<a href="{{ site.baseurl }}/images/screenshots/Galaxy_Convert.png">
+<img src="{{ site.baseurl }}/images/screenshots/Galaxy_Convert.png">
 </a>
 <figcaption>Converting between data formats</figcaption>
 </figure>
