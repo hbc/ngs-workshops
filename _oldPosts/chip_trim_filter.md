@@ -9,6 +9,8 @@ Tags: galaxy, chip-seq
 
 ---
 
+## Read trimming and filtering
+
 Depending on your FASTQ results you may need to test for contamination (either by vector or other sourcers) and/or remove adapter sequences from your read prior to alignment. It is good to remove these sequences to increase your mapping efficiency. Note that this is not a problem for our sample data.
 
 ## Screen for contamination
