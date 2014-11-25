@@ -60,7 +60,7 @@ Open up Galaxy from your machine as before, start up a new blank history and giv
 
 Browse to the `ChIP-Seq Data` folder, expand the `Sequence and reference data` folder, and click on the arrow to the right of the filename `H1hesc_Input_Rep1_chr12_unfiltered.fastq`. In the context menu select `Import this dataset into selected histories`. On the next screen, select the history you are using. The file should now appear in your history
 
-This is the kind of data you would expect to receive from your sequencing core facility: a large number of short nucleotide reads in [FASTQ format](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/Nucleic%20Acids%20Res%202009%20Cock.pdf) (PDF). 
+This is the kind of data you would expect to receive from your sequencing core facility: a large number of short nucleotide reads in [FASTQ format]({{ site.baseurl }}/documents/QC/Nucleic%20Acids%20Res%202009%20Cock.pdf) (PDF). 
 
 > Take a look at the file contents using Galaxy's preview and file view functionality. What additional information does FASTQ contain over FASTA? How many reads are in your file? Pick the first sequence in your FASTQ file and note the identifier. What is the quality score of it's first and last nucleotide, respectively?
 
@@ -83,7 +83,7 @@ While Galaxy has a number of different methods to assess sequence properties you
 
 Under the `NGS: QC and manipulation` tool find `FASTQC: Read QC` and give it a try. 
 
-> What does the quality plot tell you about your data? What additional information do you get with this tool? What can you say about the per-base GC content? Does this match the human genome? Why is there a shift in the GC distribution from the theoretical distribution? Finally, what is the meaning of the k-mer content tab? This publication from [Schroeder et al](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/PLoS%20ONE%202010%20Schr%C3%B6der.pdf) (PDF) has some background information.
+> What does the quality plot tell you about your data? What additional information do you get with this tool? What can you say about the per-base GC content? Does this match the human genome? Why is there a shift in the GC distribution from the theoretical distribution? Finally, what is the meaning of the k-mer content tab? This publication from [Schroeder et al]({{ site.baseurl }}/documents/QC/PLoS%20ONE%202010%20Schröder.pdf) (PDF) has some background information.
 
 Compare your results with a [pre-generated FastQC plot](https://dl.dropboxusercontent.com/u/76426/ChIP-seq/wgEncodeHaibTfbsH1hescRxlchV0422111RawDataRep1_fastqc/fastqc_report.html) obtained from the full FASTQ data set (i.e., using all reads). 
 
@@ -99,7 +99,7 @@ Depending on your FASTQ results you may need to test for contamination (either b
 ### Screen for contamination
 {:.no_toc}
 
-Not all required tools are available through Galaxy just yet. For example, depending on the source of your data you probably want to screen your reads for contamination using tools such as [ContEst](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/Bioinformatics%202011%20Cibulskis.pdf) (PDF) or [SeqTrim](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/BMC%20Bioinformatics%202010%20Falgueras.pdf) (PDF). For now we will just explore how you can spot potential contamination from the FastQC results alone. 
+Not all required tools are available through Galaxy just yet. For example, depending on the source of your data you probably want to screen your reads for contamination using tools such as [ContEst]({{ site.baseurl }}/documents/QC/Bioinformatics%202011%20Cibulskis.pdf) (PDF) or [SeqTrim]({{ site.baseurl }}/documents/QC/BMC%20Bioinformatics%202010%20Falgueras.pdf) (PDF). For now we will just explore how you can spot potential contamination from the FastQC results alone. 
 
 > What is the most overrepresented sequence in the pre-generated FastQC results from the h1-hESC sample?
 
@@ -157,7 +157,7 @@ Using it generates a slight time overhead since the reference genome needs to be
 ### Perform read alignment
 {:.no_toc}
 
-You will start by aligning your reads to chr12 using a standard aligner, `Bowtie`. If you'd like to learn more about its underlying algorithm, advantages and drawbacks a recent [review from Bao et al](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/Exome%20Seq/J%20Hum%20Genet%202011%20Bao.pdf) (PDF) might be of interest. It also references the original paper which walks you through the methods.
+You will start by aligning your reads to chr12 using a standard aligner, `Bowtie`. If you'd like to learn more about its underlying algorithm, advantages and drawbacks a recent [review from Bao et al]({{ site.baseurl }}/documents/Exome%20Seq/J%20Hum%20Genet%202011%20Bao.pdf) (PDF) might be of interest. It also references the original paper which walks you through the methods.
 
 You can find the tool under the `NGS:Mapping` tool heading. Make sure you select the corresponding tool for `Illumina`. Do not use the built-in reference genomes, and instead, select `Use one from the history` and choose the `chr12-reference_sequence.fa`. Select `Single-End` under “library mate pairing”. In the Bowtie settings, choose `Full parameter list`. As you can see, there are many parameters that you can change depending on the type of data you are working with. Change the `Suppress all alignments for a read if more than n reportable alignments exist (-m)` from `-1` to `1` to ensure that only uniquely mapping reads are reported. Click the `Execute` button to launch the alignment. [_Note: There's also a Bowtie Version 2 by now, but we'll stick to Bowtie 1 for the time being._]
 
@@ -167,7 +167,7 @@ You can find the tool under the `NGS:Mapping` tool heading. Make sure you select
 ### Filter unmapped reads and convert SAM files to BAM files
 {:.no_toc}
 
-Most aligners produce output in ["SAM" format](http://samtools.sourceforge.net/) (Sequence Alignment/Map format by now, see [publication from Heng Li](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/Exome%20Seq/Bioinformatics%202009%20Li-3.pdf) (PDF) for more details). 
+Most aligners produce output in ["SAM" format](http://samtools.sourceforge.net/) (Sequence Alignment/Map format by now, see [publication from Heng Li]({{ site.baseurl }}/documents/Exome%20Seq/Bioinformatics%202009%20Li-3.pdf) (PDF) for more details). 
 
 > Explore the SAM format. What key information is contained?
 
@@ -187,17 +187,33 @@ To speed up processing those need to get converted into their binary counterpart
 
 Take a look at your alignment in IGV (Integrative Genomics Viewer). To do so, first expand the alignment result (the `BAM` file) in your history and click on the `web current` link beside `display with IGV`. This will download IGV to your machine. It should start automatically after a few security warnings (if not, find the `igv.jlnp` file and click it yourself).
 
-You should see a window that looks like this:
+You should see a window that looks like this:    
 
-[![IGV Startup](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/IGV_Chip_1.png)](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/IGV_Chip_1.png)
+<figure>
+<a href="{{ site.baseurl }}/images/screenshots/IGV_Chip_1.png">
+<img src="{{ site.baseurl }}/images/screenshots/IGV_Chip_1.png">
+</a>
+<figcaption>The IGV interface at startup</figcaption>
+</figure>
 
 Click in the highlighted window…
 
-[![Highlight](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/IGV_Chip_2.png)](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/IGV_Chip_2.png)
+<figure>
+<a href="{{ site.baseurl }}/images/screenshots/IGV_Chip_2.png">
+<img src="{{ site.baseurl }}/images/screenshots/IGV_Chip_2.png">
+</a>
+<figcaption>The IGV search box</figcaption>
+</figure>
 
 … and enter the gene name `AKAP3`. You should now be able to see the individual reads, you can zoom in further using the controls on the upper right and scroll around by clicking and dragging in the highlighted alignment track. Note that IGV automatically translated the gene symbol into the matching genomic coordinates for your genome build:
 
-[![Sample Gene](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/IGV_Chip_3.png)](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/IGV_Chip_3.png)
+<figure>
+<a href="{{ site.baseurl }}/images/screenshots/IGV3.png">
+<img src="{{ site.baseurl }}/images/screenshots/IGV3.png">
+</a>
+<figcaption>Sample gene</figcaption>
+</figure>
+
 
 Recall that this is the input file, i.e. the control.
 
@@ -235,7 +251,7 @@ We will use MACS to call "Nanog" peaks in a ChIP (tag) sample versus a control (
 8. Note the `MFOLD` parameter which is used to select genomic regions to build the experiment-specific peak model. A region is used for the model if it contains more than mfold reads than the region surrounding it. We will use the default value (32) but this value can be tweaked to obtain more or less peaks.
 9. Check the box for `Perform the new peak detection method (futurefdr)`. This uses both the control and treatment data to calculate local bias and identify peak locations.
 
-While MACS is running, use the time to browse through its [manual](http://liulab.dfci.harvard.edu/MACS/00README.html) or explore the [MACS Protocol paper](https://dl.dropboxusercontent.com/u/76426/ChIP-seq/nprot.2012.101.pdf) (PDF) which describes how to set parameters for transcription factor binding and histone modification data sets, and how to interpret the output. A new version, [MACS2](https://pypi.python.org/pypi/MACS2/2.0.10.20130419), has been released but is not available in this Galaxy instance. 
+While MACS is running, use the time to browse through its [manual](http://liulab.dfci.harvard.edu/MACS/00README.html) or explore the [MACS Protocol paper]({{ site.baseurl }}/documents/ChIP-seq/nprot.2012.101.pdf) (PDF) which describes how to set parameters for transcription factor binding and histone modification data sets, and how to interpret the output. A new version, [MACS2](https://pypi.python.org/pypi/MACS2/2.0.10.20130419), has been released but is not available in this Galaxy instance. 
 
 The algorithm will generate two files. The first output is a BED file with the coordinates of the peaks. Instructions for viewing the peaks in IGV follows below.
 
