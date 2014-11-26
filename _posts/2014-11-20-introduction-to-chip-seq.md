@@ -85,7 +85,7 @@ Under the `NGS: QC and manipulation` tool find `FASTQC: Read QC` and give it a t
 
 > What does the quality plot tell you about your data? What additional information do you get with this tool? What can you say about the per-base GC content? Does this match the human genome? Why is there a shift in the GC distribution from the theoretical distribution? Finally, what is the meaning of the k-mer content tab? This publication from [Schroeder et al]({{ site.baseurl }}/documents/QC/PLoS%20ONE%202010%20Schröder.pdf) (PDF) has some background information.
 
-Compare your results with a [pre-generated FastQC plot](https://dl.dropboxusercontent.com/u/76426/ChIP-seq/wgEncodeHaibTfbsH1hescRxlchV0422111RawDataRep1_fastqc/fastqc_report.html) obtained from the full FASTQ data set (i.e., using all reads). 
+Compare your results with a [pre-generated FastQC plot]({{ site.baseurl }}/documents/ChIP-Seq/FASTQC_Pre-gen_Plot1/wgEncodeHaibTfbsH1hescRxlchV0422111RawDataRep1.fastq%20FastQC%20Report.html) obtained from the full FASTQ data set (i.e., using all reads). 
 
 > Do you note any differences in the output or format? Why is that?
 
@@ -103,7 +103,7 @@ Not all required tools are available through Galaxy just yet. For example, depen
 
 > What is the most overrepresented sequence in the pre-generated FastQC results from the h1-hESC sample?
 
-Compare your own FastQC results with a different [pre-generated FastQC summary](http://dl.dropbox.com/u/4253254/Training/HSCI_Workshop/D19VHACXX_s1_0_illumina12index_12_SL17357_fastqc/fastqc_report.html) that highlights a potential problem.
+Compare your own FastQC results with a different [pre-generated FastQC summary]({{ site.baseurl }}/documents/ChIP-Seq/FASTQC_Pre-gen_Plot2/D19VHACXX_s1_0_illumina12index_12_SL17357.fastq%20FastQC%20Report.html) that highlights a potential problem.
 
 > Study the report. Is there any vector contamination present? Is there any adapter contamination present?
 
