@@ -333,7 +333,12 @@ To identify over-represented motifs, we will use [DREME](http://meme.nbcr.net/me
 
 You will be shown a status page describing the inputs and the selected parameters, as well as a link to the results at the top of the screen. Clicking the link displays an output page that is continually updated until the analysis has completed. DREME will also email you once the analysis is complete. This may take some time depending on the server load and the size of the file. While you wait, take a look at the expected result (obtained by clicking on the HTML output link once the analysis has completed).
 
-[![DREME](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/Chip_Dreme.png)](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/Chip_Dreme.png)
+<figure>
+<a href="{{ site.baseurl }}/images/screenshots/Chip_Dreme.png">
+<img src="{{ site.baseurl }}/images/screenshots/Chip_Dreme.png">
+</a>
+<figcaption>DREME Output</figcaption>
+</figure>
 
 DREME’s HTML output provides a list of **Discovered Motifs** displayed as sequence logos (in the forward and reverse complement (RC) orientations), along with an E-value for the significance of the result. Clicking on `More` displays the number of times the motif was identified. 
 
@@ -363,7 +368,13 @@ In order to be able to identify functional enrichment we need to look at genome 
 
 GREAT provides the output in HTML format organized by section. 
 
-[![GREAT](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/Chip_Great.png)](https://dl.dropboxusercontent.com/u/407047/Blog/Screenshots/Chip_Great.png)
+<figure>
+<a href="{{ site.baseurl }}/images/screenshots/Chip_Great.png">
+<img src="{{ site.baseurl }}/images/screenshots/Chip_Great.png">
+</a>
+<figcaption>GREAT Output</figcaption>
+</figure>
+
 
 The first section contains the **Job Description** detailing the inputs and parameters. The **Region-Gene Association Graphs** indicate the number of associated genes per region, and the distances of the regions to transcription start sites (TSS), providing insights into the genomic organization of Nanog ChIP regions.
 
