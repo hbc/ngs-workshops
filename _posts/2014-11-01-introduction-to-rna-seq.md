@@ -93,7 +93,7 @@ Not all required tools are available through Galaxy just yet. For example, depen
 
 > Where is the most overrepresented sequence in your FastQC results from the h1-hESC sample coming from?
 
-Compare your own FastQC results with a [pre-generated FastQC summary](http://dl.dropbox.com/u/4253254/Training/HSCI_Workshop/D19VHACXX_s1_0_illumina12index_12_SL17357_fastqc/fastqc_report.html) that highlights a potential problem.
+Compare your own FastQC results with a [pre-generated FastQC summary]({{ site.baseurl }}/documents/RNA-seq/FASTQC_Pre-gen_Plot2/D19VHACXX_s1_0_illumina12index_12_SL17357.fastq%20FastQC%20Report.html) that highlights a potential problem.
 
 > Study the report. Is there any vector contamination present? Is there any adapter contamination present?
 
@@ -126,14 +126,16 @@ If for some reason any of the previous steps did not work you can retrieve a qua
 Next we are going to look at the steps we need to take once we have a clean, filtered FASTQ file that is ready for alignment. Use the filtered FASTQ file that you prepared in the previous section. The alignment process consists of the following steps:
 
 * Choose an appropriate reference genome to map your reads against
-* Choose an appropriate gene annotation model to guide your alignment* Perform the read alignment
+* Choose an appropriate gene annotation model to guide your alignment
+* Perform the read alignment
 
 ### Load the filtered FASTQ file and Reference Genome
 {: .no_toc}
 
 To avoid excessive runtimes during later steps we will not align the reads against the whole human genome, just _chr19_. We have retrieved the sequence for this chromosome from UCSC GoldenPath (hg19) and added it to the `Data Library`. This means we won't use the pre-built genome indices, but submit our own reference sequence. We are also using only a subset of reads from a single sample for the next few steps. 
 
-1. Start up a new blank history and give it a name.2. Either load your filtered FASTQ files from the previous tutorial, or download a filtered FASTQ file from the Shared Data Libraries in Galaxy. 
+1. Start up a new blank history and give it a name.
+2. Either load your filtered FASTQ files from the previous tutorial, or download a filtered FASTQ file from the Shared Data Libraries in Galaxy. 
 3. Find the chromosome 19 genomic sequence in `RNA-Seq`, `Sequence and Reference Data` as `chr19-reference_sequence.fa` and import it into your new history. 
 
 Using it generates a slight time overhead since the reference genome needs to be indexed prior to each alignment run, but this is acceptable for now. 
