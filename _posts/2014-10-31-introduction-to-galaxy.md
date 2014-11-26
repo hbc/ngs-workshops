@@ -60,9 +60,10 @@ Even though it is not required to run analyses, logging in with your account giv
 In our example analysis, our goal will be to generate a list of potential eQTLs by finding SNPs within gene promoters. To keep things manageable, we'll restrict our search to short genes on the X-chromosome. To accomplish our goal we'll need to know a few things:
 
 1. The genes on the X-chromosome and their genomic coordinates.
-2. The lengths of these genes; we'll use the number of exons as an approximate measure. 
+2. The lengths of these genes; we'll use the number of exons as an approximate measure.
+3. The locations of the promoters of our short genes; we'll define these as the regions just upstream of the genes' transcriptional start sites. 
 4. A list of SNPs and their genomic coordinates.
-3. The locations of the promoters of our genes; we'll define these as the regions just upstream of the genes' transcriptional start sites.
+
 
 Some of these we can directly import into Galaxy, others we will calculate from within Galaxy itself. Let's start by importing a list of genes into Galaxy.
 
@@ -195,11 +196,11 @@ It is always a good idea to rename your datasets as they are created to make sur
 #### Converting data types
 {: .no_toc}
 
-For the purposes of this tutorial, we’ll be needing this dataset in `Interval` format. If you remember, the gene list is being represented in `BED` format. You can perform this kind of conversation of data formats right in the history section using the pencil tool. The `Cut` tool has probably already converted the dataset to `Interval`, but have a look at the options available.
+For the purposes of this tutorial, we’ll be needing this dataset in `Interval` format. If you remember, the gene list is being represented in `BED` format. You can perform this kind of conversion of data formats right in the history section using the pencil tool and clicking on the `Convert Format` tab in the main panel. The `Cut` tool has probably already converted the dataset to `Interval`, but have a look at the options available.
 
 <figure>
-<a href="{{ site.baseurl }}/images/screenshots/GalaxyFormatConversion.png">
-<img src="{{ site.baseurl }}/images/screenshots/GalaxyFormatConversion.png">
+<a href="{{ site.baseurl }}/images/screenshots/Galaxy_Convert.png">
+<img src="{{ site.baseurl }}/images/screenshots/Galaxy_Convert.png">
 </a>
 <figcaption>Converting between data formats</figcaption>
 </figure>
