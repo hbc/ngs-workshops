@@ -7,10 +7,10 @@
 
 ## Useful Resources for Training in Bioinformatics
 
-**Stephen Turner's RNA-Seq data analysis course** 
-Duration: one-day workshop using Amazon instance
-SWC-like materials for an Intro to Unix/Shell and possibly R. Walk-through analysis from raw reads to differential expression. 
-http://bioconnector.github.io/workshops/lessons/rnaseq-1day/
+[**Stephen Turner's RNA-Seq data analysis course**](http://bioconnector.github.io/workshops/lessons/rnaseq-1day/)                      
+* Duration: one-day workshop using Amazon instance
+* SWC-like materials for an Intro to Unix/Shell and possibly R. Walk-through analysis from raw reads to differential expression. 
+
 http://gettinggeneticsdone.blogspot.com/2014/11/rna-seq-data-analysis-course-materials.html
 
 **Titus Brown's NGS Course** 
@@ -19,8 +19,7 @@ Emphasis on variety of NGS methods (mapping, RNA-Seq, variant calling) including
 http://angus.readthedocs.org/en/2014/
 
 **edX Course on NGS topics using R** 
-MOOCS, online 8-course series
-http://simplystatistics.org/2014/11/25/harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/
+MOOCS, online 8-course series of [Statistical Analaysis of NGS data](http://simplystatistics.org/2014/11/25/harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/)              
 1. Statistics and R for the Life Sciences
 2. Introduction to Linear Models and Matrix Algebra
 3. Advanced Statistics for the Life Sciences
