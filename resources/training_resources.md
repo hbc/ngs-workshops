@@ -18,7 +18,8 @@ http://gettinggeneticsdone.blogspot.com/2014/11/rna-seq-data-analysis-course-mat
 * Emphasis on variety of NGS methods (mapping, RNA-Seq, variant calling) including small intro with BLAST. Topics from SWC are short and interspersed throughout. Good coverage on NGS topics.
 
 
-### edX Course on NGS topics using R
+**edX Course on NGS topics using R**
+
 MOOCS, online 8-course series of [Statistical Analaysis of NGS data](http://simplystatistics.org/2014/11/25/harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/)
 
 1. Statistics and R for the Life Sciences
@@ -33,7 +34,8 @@ MOOCS, online 8-course series of [Statistical Analaysis of NGS data](http://simp
 [**Canadian Bioinformatics Workshops**](http://bioinformatics.ca/workshops/2014)
 A collection of two-day workshops covering a wide-aray of topics including NGS, R, Pathway and Network analysis.
 
-### Statistical/data analysis Course material using R
+**Statistical/data analysis Course material using R**
+
 A [_stats course at UBC_](http://stat545-ubc.github.io/topics.html) run by Jenny Bryan @Jenny Bryan. Topics covered include Git, data manipulation (tidy data) and graph/figures. Also useful notes on creating R packages.
 
 [_swirl:_](http://swirlstats.com/) interactively learn R. Using R Studio you will be prompted in the console and explanations provided as you proceed. A variety of course options at the beginner, intermediate and advanced levels. 
