@@ -49,16 +49,14 @@ http://swirlstats.com/instructors.html
 [**PacBio turtorial series**](https://github.com/PacificBiosciences/Bioinformatics-Training/wiki)
 Workshops and slides are PacBio specific. Details on the technology/chemistry and expected results.
 
-**Understanding the algorithms that underlie bioinformatics tools**
-
-* http://www.homolog.us/Tutorials/
+**Understanding the algorithms that underlie bioinformatics tools:** http://www.homolog.us/Tutorials/
 
 [**Software Carpentry**](http://software-carpentry.org/lessons.html)
 Teaching lab for basic scientific computing skills. Topics likely to incorporate include Unix Shell, Git/Version Control, R and Python 
 
 **BITS tutorial series for using UCSC Genome Browser**
 
-Countway library provides helpful [video tutorials[(https://www.countway.harvard.edu/menuNavigation/libraryServices/classes/videoTutorials.html) on using the UCSC Genome Browser, BLAST, and other NCBI Resources
+Countway library provides helpful [video tutorials](https://www.countway.harvard.edu/menuNavigation/libraryServices/classes/videoTutorials.html) on using the UCSC Genome Browser, BLAST, and other NCBI Resources
 
 [**Genome Education Partnership**](http://gep.wustl.edu/)
 
