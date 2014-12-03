@@ -41,7 +41,7 @@ A collection of two-day workshops covering a wide-array of topics including NGS,
 	* The advanced statistical inference course follows closely with a course at JHU:
 https://github.com/DataScienceSpecialization/courses
 
-	* Or create your own swirl course with interatcive content of your choice:
+	* Or create your own swirl course with interactive content of your choice:
 http://swirlstats.com/instructors.html
 
 6. [**PacBio turtorial series**](https://github.com/PacificBiosciences/Bioinformatics-Training/wiki)
