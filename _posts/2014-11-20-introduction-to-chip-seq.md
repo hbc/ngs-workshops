@@ -20,7 +20,9 @@ date: 2014-11-20T01:11:42-04:00
 </div>
 </section><!-- /#table-of-contents -->
 
-This session provides a basic introduction to conducting a ChIP-seq analysis using the Galaxy framework. Some material has been borrowed [Morgane Thomas-Chollier’s ChIP-seq tutorial](http://ngs.molgen.mpg.de/ngsuploads/Cornelius/ESGI/Chip.htm) and [Galaxy workflow](http://main.g2.bx.psu.edu/u/morgane/h/fromreadstopeaks), and the [Princeton HTSEQ Users Tutorial](https://sites.google.com/site/princetonhtseq/tutorials/chip-seq). 
+This session provides a basic introduction to conducting a ChIP-seq analysis using the Galaxy framework. Some material has been borrowed [Morgane Thomas-Chollier’s ChIP-seq tutorial](http://ngs.molgen.mpg.de/ngsuploads/Cornelius/ESGI/Chip.htm) and [Galaxy workflow](http://main.g2.bx.psu.edu/u/morgane/h/fromreadstopeaks), and the [Princeton HTSEQ Users Tutorial](https://sites.google.com/site/princetonhtseq/tutorials/chip-seq).  
+
+<br>A pdf of step-by-step snapshots for these course materials is available [here](https://www.dropbox.com/s/lyvtcle4tgigevt/introtochipseq_snapshots.pdf?dl=0).
 
 ### Course scope
 {:.no_toc}
@@ -200,8 +202,8 @@ Click in the highlighted window…
 … and enter the gene name `AKAP3`. You should now be able to see the individual reads, you can zoom in further using the controls on the upper right and scroll around by clicking and dragging in the highlighted alignment track. Note that IGV automatically translated the gene symbol into the matching genomic coordinates for your genome build:
 
 <figure>
-<a href="{{ site.baseurl }}/images/screenshots/IGV3.png">
-<img src="{{ site.baseurl }}/images/screenshots/IGV3.png">
+<a href="{{ site.baseurl }}/images/screenshots/IGV_Chip_3.png">
+<img src="{{ site.baseurl }}/images/screenshots/IGV_Chip_3.png">
 </a>
 <figcaption>Sample gene</figcaption>
 </figure>
@@ -243,7 +245,7 @@ We will use MACS to call "Nanog" peaks in a ChIP (tag) sample versus a control (
 8. Note the `MFOLD` parameter which is used to select genomic regions to build the experiment-specific peak model. A region is used for the model if it contains more than mfold reads than the region surrounding it. We will use the default value (32) but this value can be tweaked to obtain more or less peaks.
 9. Check the box for `Perform the new peak detection method (futurefdr)`. This uses both the control and treatment data to calculate local bias and identify peak locations.
 
-While MACS is running, use the time to browse through its [manual](http://liulab.dfci.harvard.edu/MACS/00README.html) or explore the [MACS Protocol paper]({{ site.baseurl }}/documents/ChIP-seq/nprot.2012.101.pdf) (PDF) which describes how to set parameters for transcription factor binding and histone modification data sets, and how to interpret the output. A new version, [MACS2](https://pypi.python.org/pypi/MACS2/2.0.10.20130419), has been released but is not available in this Galaxy instance. 
+While MACS is running, use the time to browse through its [manual](http://liulab.dfci.harvard.edu/MACS/00README.html) or explore the [MACS Protocol paper]({{ site.baseurl }}/documents/ChIP-seq/nprot.2012.101.pdf) (PDF) which describes how to set parameters for transcription factor binding and histone modification data sets, and how to interpret the output. A new version, [MACS2](https://pypi.python.org/pypi/MACS2/2.0.10.20130419) is available, but we will be using the older version for today’s exercises.
 
 The algorithm will generate two files. The first output is a BED file with the coordinates of the peaks. Instructions for viewing the peaks in IGV follows below.
 
