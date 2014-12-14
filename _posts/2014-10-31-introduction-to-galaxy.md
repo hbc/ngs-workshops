@@ -28,7 +28,7 @@ This first session will familiarize you with the system, and we will be using th
 
 In order for you to be able to access Galaxy on your assigned dedicated machine on the Cloud, you have been given a web or IP address in the form of A.B.C.D where A, B, C and D are numbers separated by dots. 
 
-You will find the current IP address at the top of our [resource page](../resources). You will need it in order to access Galaxy from the web browser on your laptop. 
+You will find the current IP address at the top of our [resource page](../resources). You will need it in order to access Galaxy from the web browser on your laptop. You can also download a pdf of the step-by-step snapshots [here](https://www.dropbox.com/s/95g5973ny8hhps2/IntroToGalaxy_snapshots.pdf?dl=0)
 {: .notice}
 
 > If you want to work through this session outside of this course, take a look at our section on [how to set up your own Galaxy server]({{ site.baseurl }}/courses/running-your-own-galaxy-instance/) or download the [complete introduction dataset]({{ site.baseurl }}/data/Galaxy_Introduction_files.tgz) (TGZ archive, 3MB) and use one of the public Galaxy instances.
