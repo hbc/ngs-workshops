@@ -36,7 +36,7 @@ Wait `till Galaxy itself becomes available (follow the progress in the log, the 
 
 In theory the Galaxy [BioBlend]() module can spin up instances, tear them down, add tools, etc.; in practice I found lots of bugs and irritations that make working with it a bit tricky. For the time being all I use the API for is to populate the shared data library _after_ I've spun up a Cloudman instance via AWS or BioCloudCentral.
 
-Start an [Python Notebook](http://ipython.org/ipython-doc/dev/notebook/notebook.html#starting-the-notebook-server) with `ipython notebook` and navigate to the GitHub repo to find the 'Cloudman' folder alongside the `Cloudman via Bioblend` notebook and open it. 
+Start an [Python Notebook](http://ipython.org/ipython-doc/dev/notebook/notebook.html#starting-the-notebook-server) with `ipython notebook` and navigate to the GitHub repo to find the 'Cloudman' folder alongside the `Cloudman_Upload.ipynb` notebook and open it. 
 
 The explanatory text in the notebook should guide you through the process. Fair to say that the only part reliably working at this point consists of the data upload, and I'd stick to these cells (ignoring the others).
 

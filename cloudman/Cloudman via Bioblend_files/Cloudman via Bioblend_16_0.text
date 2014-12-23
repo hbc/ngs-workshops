@@ -1,0 +1,16 @@
+Installed DNase hypersensitive sites on chrX into None in 0:00:02.055485
+Installed DNase sites on chrX into None in 0:00:02.078561
+Installed UCSC Genes List hg18 into None in 0:00:15.127877
+Installed UCSC genes on chrX into None in 0:00:01.842071
+Installed Cd20_Rep1.chr19.17Mb.fastq into F1cd8e2f6b131e891 in 0:00:54.962546
+Installed Cd20_Rep2.chr19.17Mb.fastq into F1cd8e2f6b131e891 in 0:01:02.021519
+Installed H1hesc_Rep1.chr19.17Mb.fastq into F1cd8e2f6b131e891 in 0:03:12.727383
+Installed H1hesc_Rep2.chr19.17Mb.fastq into F1cd8e2f6b131e891 in 0:03:57.116378
+Installed chr19-annotations.gtf into F1cd8e2f6b131e891 in 0:00:10.752377
+Installed chr19-reference_sequence.fa into F1cd8e2f6b131e891 in 0:01:39.537643
+Installed Cufflinks Cd20Rep1 assembled transcripts into Febfb8f50c6abde6d in 0:00:08.329516
+Installed Cufflinks Cd20Rep2 assembled transcripts into Febfb8f50c6abde6d in 0:00:08.295545
+Installed Cufflinks H1hescRep2 assembled transcripts into Febfb8f50c6abde6d in 0:00:08.158372
+Installed Tophat2 Cd20Rep1 accepted_hits into Febfb8f50c6abde6d in 0:00:11.503264
+Installed Tophat2 Cd20Rep2 accepted_hits into Febfb8f50c6abde6d in 0:00:12.594695
+Installed Tophat2 H1hescRep2 accepted_hits into Febfb8f50c6abde6d in 0:00:43.098065

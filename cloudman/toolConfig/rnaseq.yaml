@@ -1,0 +1,10 @@
+tools:
+- name: edger
+  owner: fcaramia
+  tool_panel_section_id: plots
+  tool_shed_url: http://toolshed.g2.bx.psu.edu
+- name: tophat2
+  owner: devteam
+  tool_panel_section_id: plots
+  tool_shed_url: http://toolshed.g2.bx.psu.edu
+

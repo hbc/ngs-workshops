@@ -1,0 +1,48 @@
+<html><head><title>Additional output created by MACS (MACS_Pou5f1Rep1)</title></head><body><h3>Additional Files:</h3><p><ul>
+<li><a href="MACS_Pou5f1Rep1_model.pdf">MACS_Pou5f1Rep1_model.pdf</a></li>
+<li><a href="MACS_Pou5f1Rep1_model.r">MACS_Pou5f1Rep1_model.r</a></li>
+<li><a href="MACS_Pou5f1Rep1_model.r.log">MACS_Pou5f1Rep1_model.r.log</a></li>
+<li><a href="MACS_Pou5f1Rep1_negative_peaks.xls">MACS_Pou5f1Rep1_negative_peaks.xls</a></li>
+<li><a href="MACS_Pou5f1Rep1_peaks.xls">MACS_Pou5f1Rep1_peaks.xls</a></li>
+</ul></p>
+<h3>Messages from MACS:</h3>
+<p><pre>INFO  @ Thu, 23 May 2013 14:29:10: 
+# ARGUMENTS LIST:
+# name = MACS_Pou5f1Rep1
+# format = BAM
+# ChIP-seq file = /mnt/galaxyData/files/005/dataset_5887.dat
+# control file = /mnt/galaxyData/files/005/dataset_5883.dat
+# effective genome size = 2.70e+09
+# tag size = 36
+# band width = 300
+# model fold = 32
+# pvalue cutoff = 1.00e-05
+# Ranges for calculating regional lambda are : peak_region,1000,5000,10000 
+INFO  @ Thu, 23 May 2013 14:29:10: #1 read tag files... 
+INFO  @ Thu, 23 May 2013 14:29:10: #1 read treatment tags... 
+INFO  @ Thu, 23 May 2013 14:29:13: #1.2 read input tags... 
+INFO  @ Thu, 23 May 2013 14:29:21: #1  Background Redundant rate: 0.22 
+INFO  @ Thu, 23 May 2013 14:29:21: #1 finished! 
+INFO  @ Thu, 23 May 2013 14:29:21: #2 Build Peak Model... 
+INFO  @ Thu, 23 May 2013 14:29:25: #2 number of paired peaks: 6380 
+INFO  @ Thu, 23 May 2013 14:29:25: #2 finished! 
+INFO  @ Thu, 23 May 2013 14:29:25: #2.2 Generate R script for model : MACS_Pou5f1Rep1_model.r 
+INFO  @ Thu, 23 May 2013 14:29:25: #3 Call peaks... 
+WARNING @ Thu, 23 May 2013 14:29:25: Treatment tags and Control tags are uneven! FDR may be wrong! 
+INFO  @ Thu, 23 May 2013 14:29:25: #3 shift treatment data 
+INFO  @ Thu, 23 May 2013 14:29:25: #3 merge +/- strand of treatment data 
+INFO  @ Thu, 23 May 2013 14:29:25: #3 call peak candidates 
+INFO  @ Thu, 23 May 2013 14:29:29: #3 shift control data 
+INFO  @ Thu, 23 May 2013 14:29:29: #3 merge +/- strand of control data 
+INFO  @ Thu, 23 May 2013 14:29:30: #3 call negative peak candidates 
+INFO  @ Thu, 23 May 2013 14:29:44: #3 use control data to filter peak candidates... 
+INFO  @ Thu, 23 May 2013 14:29:49: #3 Finally, 136 peaks are called! 
+INFO  @ Thu, 23 May 2013 14:29:49: #3 find negative peaks by reversing treat and control 
+INFO  @ Thu, 23 May 2013 14:29:58: #3 Finally, 29 peaks are called! 
+INFO  @ Thu, 23 May 2013 14:29:58: #4 Write output xls file... MACS_Pou5f1Rep1_peaks.xls 
+INFO  @ Thu, 23 May 2013 14:29:58: #4 Write output bed file... MACS_Pou5f1Rep1_peaks.bed 
+INFO  @ Thu, 23 May 2013 14:29:58: #4 Write output xls file for negative peaks... MACS_Pou5f1Rep1_negative_peaks.xls 
+INFO  @ Thu, 23 May 2013 14:29:58: #5 Done! Check the output files!
+ 
+</pre></p>
+</body></html>

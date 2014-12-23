@@ -1,0 +1,2 @@
+{u'disk_usage': {u'total': u'0', u'pct': u'0%', u'used': u'0'}, u'all_fs': [], u'app_status': u'yellow', u'autoscaling': {u'use_autoscaling': False, u'as_max': u'N/A', u'as_min': u'N/A'}, u'snapshot': {u'status': u'None', u'progress': u'None'}, u'cluster_status': u'STARTING', u'dns': u'#', u'instance_status': {u'available': u'0', u'requested': u'0', u'idle': u'0'}, u'data_status': u'yellow'}
+http://54.211.165.38/cloud

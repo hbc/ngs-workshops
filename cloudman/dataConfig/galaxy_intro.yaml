@@ -1,0 +1,23 @@
+---
+Description: 'Files for the introduction to Galaxy'
+Synopsis: 'Gene and DNAse hypersensitive site coordinates for hg18'
+Path: './data/Galaxy Introduction'
+Folders:
+- Path: ''
+  files:
+  - filename: 'DNase hypersensitive sites on chrX'
+    database: 'hg18'
+    filetype: 'bed'
+  - filename: 'DNase sites on chrX'
+    database: 'hg18'
+    filetype: 'bed'
+  - filename: 'UCSC Genes List hg18'
+    database: 'hg18'
+    filetype: 'bed'
+  - filename: 'UCSC genes on chrX'
+    database: 'hg18'
+    filetype: 'bed'
+  - filename: "SNPs on chrX"
+    database: "hg18"
+    filetype: "bed"
+...

@@ -1,0 +1,11 @@
+disk_usage	{u'total': u'17G', u'pct': u'19%', u'used': u'3.2G'}
+all_fs	[]
+app_status	yellow
+autoscaling	{u'use_autoscaling': False, u'as_max': u'N/A', u'as_min': u'N/A'}
+snapshot	{u'status': u'None', u'progress': u'None'}
+cluster_status	READY
+dns	http://54.211.28.155
+instance_status	{u'available': u'0', u'requested': u'0', u'idle': u'0'}
+data_status	green
+
+Access Cloudman admin interface at http://54.211.28.155/cloud

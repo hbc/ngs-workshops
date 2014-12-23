@@ -1,0 +1,7 @@
+
+(1/2) Installing tool edger from fcaramia to section plots
+Tool edger already installed (at revision d49d06d35683)
+
+(2/2) Installing tool tophat2 from devteam to section plots
+Tool tophat2 installed successfully (in 0:00:08.067197) at revision ffa30bedbee3
+All tools listed in {'tools': [{'name': 'edger', 'tool_panel_section_id': 'plots', 'install_repository_dependencies': True, 'tool_shed_url': 'http://toolshed.g2.bx.psu.edu', 'install_tool_dependencies': True, 'owner': 'fcaramia', 'revision': u'd49d06d35683'}, {'name': 'tophat2', 'tool_panel_section_id': 'plots', 'install_repository_dependencies': True, 'tool_shed_url': 'http://toolshed.g2.bx.psu.edu', 'install_tool_dependencies': True, 'owner': 'devteam', 'revision': u'ffa30bedbee3'}]} have been installed.

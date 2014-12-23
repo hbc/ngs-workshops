@@ -1,0 +1,48 @@
+<html><head><title>Additional output created by MACS (MACS_in_Galaxy)</title></head><body><h3>Additional Files:</h3><p><ul>
+<li><a href="MACS_in_Galaxy_model.pdf">MACS_in_Galaxy_model.pdf</a></li>
+<li><a href="MACS_in_Galaxy_model.r">MACS_in_Galaxy_model.r</a></li>
+<li><a href="MACS_in_Galaxy_model.r.log">MACS_in_Galaxy_model.r.log</a></li>
+<li><a href="MACS_in_Galaxy_negative_peaks.xls">MACS_in_Galaxy_negative_peaks.xls</a></li>
+<li><a href="MACS_in_Galaxy_peaks.xls">MACS_in_Galaxy_peaks.xls</a></li>
+</ul></p>
+<h3>Messages from MACS:</h3>
+<p><pre>INFO  @ Thu, 23 May 2013 13:30:41: 
+# ARGUMENTS LIST:
+# name = MACS_in_Galaxy
+# format = BAM
+# ChIP-seq file = /mnt/galaxyData/files/005/dataset_5885.dat
+# control file = /mnt/galaxyData/files/005/dataset_5883.dat
+# effective genome size = 2.70e+09
+# tag size = 36
+# band width = 300
+# model fold = 32
+# pvalue cutoff = 1.00e-05
+# Ranges for calculating regional lambda are : peak_region,1000,5000,10000 
+INFO  @ Thu, 23 May 2013 13:30:41: #1 read tag files... 
+INFO  @ Thu, 23 May 2013 13:30:41: #1 read treatment tags... 
+INFO  @ Thu, 23 May 2013 13:30:44: #1.2 read input tags... 
+INFO  @ Thu, 23 May 2013 13:30:52: #1  Background Redundant rate: 0.08 
+INFO  @ Thu, 23 May 2013 13:30:52: #1 finished! 
+INFO  @ Thu, 23 May 2013 13:30:52: #2 Build Peak Model... 
+INFO  @ Thu, 23 May 2013 13:30:55: #2 number of paired peaks: 5769 
+INFO  @ Thu, 23 May 2013 13:30:55: #2 finished! 
+INFO  @ Thu, 23 May 2013 13:30:55: #2.2 Generate R script for model : MACS_in_Galaxy_model.r 
+INFO  @ Thu, 23 May 2013 13:30:55: #3 Call peaks... 
+WARNING @ Thu, 23 May 2013 13:30:55: Treatment tags and Control tags are uneven! FDR may be wrong! 
+INFO  @ Thu, 23 May 2013 13:30:55: #3 shift treatment data 
+INFO  @ Thu, 23 May 2013 13:30:56: #3 merge +/- strand of treatment data 
+INFO  @ Thu, 23 May 2013 13:30:56: #3 call peak candidates 
+INFO  @ Thu, 23 May 2013 13:30:58: #3 shift control data 
+INFO  @ Thu, 23 May 2013 13:30:58: #3 merge +/- strand of control data 
+INFO  @ Thu, 23 May 2013 13:30:59: #3 call negative peak candidates 
+INFO  @ Thu, 23 May 2013 13:31:10: #3 use control data to filter peak candidates... 
+INFO  @ Thu, 23 May 2013 13:31:15: #3 Finally, 210 peaks are called! 
+INFO  @ Thu, 23 May 2013 13:31:15: #3 find negative peaks by reversing treat and control 
+INFO  @ Thu, 23 May 2013 13:31:29: #3 Finally, 148 peaks are called! 
+INFO  @ Thu, 23 May 2013 13:31:29: #4 Write output xls file... MACS_in_Galaxy_peaks.xls 
+INFO  @ Thu, 23 May 2013 13:31:29: #4 Write output bed file... MACS_in_Galaxy_peaks.bed 
+INFO  @ Thu, 23 May 2013 13:31:29: #4 Write output xls file for negative peaks... MACS_in_Galaxy_negative_peaks.xls 
+INFO  @ Thu, 23 May 2013 13:31:29: #5 Done! Check the output files!
+ 
+</pre></p>
+</body></html>
