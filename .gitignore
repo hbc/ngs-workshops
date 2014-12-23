@@ -10,3 +10,4 @@ codekit-config.json
 node_modules
 _asset_bundler_cache
 _dev_config.yml
+cloudman/data/*

@@ -40,4 +40,17 @@ Start an [Python Notebook](http://ipython.org/ipython-doc/dev/notebook/notebook.
 
 The explanatory text in the notebook should guide you through the process. Fair to say that the only part reliably working at this point consists of the data upload, and I'd stick to these cells (ignoring the others).
 
+The notebook does _not_ contain the actual data files. That archive is stored in a [public Dropbox folder]() that you will need to download and extract into `~/cloudman/data`. You want to end up with something close to:
+
+```
+oho-2:ngs-workshops oho$ ls -l cloudman/data
+total 0
+drwxr-xr-x@ 5 oho  staff  170 Dec 23 10:38 ChIP-Seq
+drwxr-xr-x@ 7 oho  staff  238 Dec 23 10:38 Galaxy Introduction
+drwxr-xr-x@ 5 oho  staff  170 Dec 23 10:38 RNA-Seq
+```
+
+Make sure to add the `cloudman/data/*` to your `.gitignore` file as some of the data files are rather large.
+
+
 
