@@ -1,17 +1,3 @@
-## Old configuration (aka just in case)
-
-```
-cluster_name: tnt_20140322
-password: gVBfaDcJ0o
-access_key: 14E7Z341FP16TFSEQR02
-secret_key: 88vUqHW2onSiAvVi1kygDcili1++XKW6YkHyC+pg
-admin_users:
- - ohofmann@hsph.harvard.edu
- - shosui@hsph.harvard.edu
- - rkhetani@hsph.harvard.edu
-```
-
-
 ## Changes to the course notes
 
 * Strongly suggest to include a link and/or discussion of the [Leek group guide to Genomics Papers](https://github.com/jtleek/genomicspapers/). Awesome resource and one I point most new students at.
