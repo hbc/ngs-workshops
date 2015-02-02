@@ -163,6 +163,7 @@ We will use the `Tophat2` tool from the `NGS:RNA Analysis` folder to map your tr
 Finally, to run the alignment, click `Execute`. TopHat will generate 4 files, describing:   
 
 * accepted hits - a BAM file containing the read alignments which TopHat thinks map to a gene  
+* align_summary - a text file with the summary stats from the alignment
 * predicted splice junctions in BED format
 * predicted deletions in BED format
 * predicted insertions in BED format
@@ -307,8 +308,8 @@ For this step, you will need the `accepted hits` Tophat2 alignment output for al
 You now have all data required to identify differentially expressed transcripts and genes. Use the imported "accepted hits" BAM files together with the data you generated for your own H1hESC replicate and feed them into `Cuffdiff`:
 
 1. Under `Transcripts` select your Cuffmerge generated unified gene model. 
-2. Using `Add new Condition` make sure you have entry fields for two conditions, one for the H1hESC samples and the other for the CD20 samples.
-[//]: # 3. Using `Add new Replicate` add two replicates for each group, and under the `Add replicate` headings select the appropriate "accepted hits" BAM files for each of your groups and replicates. The file names can be difficult to differentiate so make sure you add the right samples to each group (ie., use the history step numbers instead of the filenames to identify them).
+2. Using `Add new Condition` make sure you have entry fields for two conditions, one for the H1hESC samples and the other for the CD20 samples. 
+3. Using `Add new Replicate` add two replicates for each group, and under the `Add replicate` headings select the appropriate "accepted hits" BAM files for each of your groups and replicates. The file names can be difficult to differentiate so make sure you add the right samples to each group (ie., use the history step numbers instead of the filenames to identify them).
 4. Under `Library normalization method` pick `quartile`
 5. Under `Use multi-read correct`, select `Yes` 
 6. Under `Perform Bias Correction`, select `Yes`
