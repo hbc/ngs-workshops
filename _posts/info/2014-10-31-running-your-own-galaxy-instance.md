@@ -48,14 +48,14 @@ Work your way through the remaining forms which include signing off on the AWS C
 You will receive a confirmation email from Amazon at which point you can log in:
 
 <figure>
-<img src="/images/screenshots/AWS_LoggedIn.png">
+<img src="{{ site.baseurl }}/images/screenshots/AWS_LoggedIn.png">
 <figcaption></figcaption>
 </figure>
 
 Now you are almost done. Go to `My Account / Console` and find `Security Credentials`. On the following page find the `Access Credentials` section which should list your active account along with an `Access Key ID`. Note it down, then click on `Show` underneath the `Secret Access Key`. Copy and paste that to a text document as well, you will need both to start your own Cloudman instance:
 
 <figure>
-<img src="/images/screenshots/AWS_Access.png">
+<img src="{{ site.baseurl }}/images/screenshots/AWS_Access.png">
 <figcaption></figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ Now you are almost done. Go to `My Account / Console` and find `Security Credent
 [BioCloudCentral](https://biocloudcentral.herokuapp.com/) dramatically simplifies the process of starting Cloudman, but it does require some basic information to be filled in:
 
 <figure>
-<img src="/images/screenshots/CloudMan_Start.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Start.png">
 <figcaption></figcaption>
 </figure>
 
@@ -80,14 +80,14 @@ To start with you need to provide:
 Next, click on `Show advanced startup options`, click on the little blue arrows next to `Placement` and wait for the field to populate. From the dropdown menu pick ``
 
 <figure>
-<img src="/images/screenshots/CloudMan_Placement.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Placement.png">
 <figcaption></figcaption>
 </figure>
 
 If you now click on `Start an Instance` BioCloudCentral will get to work and provide you with a link to your own Cloudman instance after a minute or two: 
 
 <figure>
-<img src="/images/screenshots/CloudMan_IP.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_IP.png">
 <figcaption></figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ If you now click on `Start an Instance` BioCloudCentral will get to work and pro
 Clicking on the IP address link will take you to your new server; use the user name and password you just set up to log in. Cloudman will ask you how much storage space to set aside to begin with as part of the `Galaxy Cluster` option:
 
 <figure>
-<img src="/images/screenshots/CloudMan_Setup.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Setup.png">
 <figcaption></figcaption>
 </figure>
 
@@ -110,7 +110,7 @@ If, instead, you would like to use the data from our workshops there is an easie
 {: .notice}
 
 <figure>
-<img src="/images/screenshots/CloudMan_ShareInstance.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_ShareInstance.png">
 <figcaption></figcaption>
 </figure>
 
@@ -126,7 +126,7 @@ Note that now that Cloudman is running it automatically enables an [FTP account]
 Remember to **shut down your cluster** once you are done with the analysis. This will minimize incurred costs though you still will have to cover the storage charges. In return this allows you to come back at any time and re-start the Galaxy instance (as long as you give it the same name) which will resume with all your data, workflows and histories in place:
 
 <figure>
-<img src="/images/screenshots/CloudMan_Terminate.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Terminate.png">
 <figcaption></figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ Remember to **shut down your cluster** once you are done with the analysis. This
 
 
 <figure>
-<img src="/images/screenshots/CloudMan_Shutdown.png">
+<img src="{{ site.baseurl }}/images/screenshots/CloudMan_Shutdown.png">
 <figcaption></figcaption>
 </figure>
 

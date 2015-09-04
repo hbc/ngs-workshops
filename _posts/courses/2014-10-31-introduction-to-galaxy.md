@@ -40,8 +40,8 @@ You will find the current IP address at the top of our [resource page](../resour
 Before we get going on an analysis, let's start with exploring what a Galaxy instance actually looks like. Open up a web browser of your choice, and enter the web or IP address given to you during the course into the Address Bar and press ENTER. You should see the main Galaxy screen as shown below. This example was run using the Google Chrome web browser. This is the main `Analyze data` window where data analysis is performed. You should see something similar to the following screenshot. 
 
 <figure>
-<a href="../images/screenshots/GalaxyOverview.png">
-<img src="../images/screenshots/GalaxyOverview.png">
+<a href="../../images/screenshots/GalaxyOverview.png">
+<img src="../../images/screenshots/GalaxyOverview.png">
 </a>
 <figcaption>The basic Galaxy interface</figcaption>
 </figure>
@@ -86,15 +86,15 @@ You can import data that has been shared with you by the Galaxy site maintainer 
 3. Import them into your current history by selecting `Import to current history` from the `For selected datasets:` menu near the bottom of the page and clicking the `Go`  button located immediately to the right.
 
 <figure>
-<a href="../images/screenshots/GalaxyDataLib.png">
-<img src="../images/screenshots/GalaxyDataLib.png">
+<a href="../../images/screenshots/GalaxyDataLib.png">
+<img src="../../images/screenshots/GalaxyDataLib.png">
 </a>
 <figcaption>Detail view on accessing Galaxy’s data libraries</figcaption>
 </figure>
 
 <figure>
-<a href="../images/screenshots/GalaxyImport.png">
-<img src="../images/screenshots/GalaxyImport.png">
+<a href="../../images/screenshots/GalaxyImport.png">
+<img src="../../images/screenshots/GalaxyImport.png">
 </a>
 <figcaption>Importing data into the current history</figcaption>
 </figure>
@@ -114,8 +114,8 @@ There are also some additional buttons underneath the title that allow you to do
 Let’s take a look at this data in greater detail. If you click on the little “eye” button, you’ll be able to view the entire dataset in the center pane:
 
 <figure>
-<a href="../images/screenshots/GalaxyImportResults.png">
-<img src="../images/screenshots/GalaxyImportResults.png">
+<a href="../../images/screenshots/GalaxyImportResults.png">
+<img src="../../images/screenshots/GalaxyImportResults.png">
 </a>
 <figcaption>Exploring the results of your data import</figcaption>
 </figure>
@@ -123,8 +123,8 @@ Let’s take a look at this data in greater detail. If you click on the little �
 Next to the “eye” button is a little “pencil” button [^2]. If you click on that, you can edit the attributes of this dataset:
 
 <figure>
-<a href="../images/screenshots/GalaxyEdits.png">
-<img src="../images/screenshots/GalaxyEdits.png">
+<a href="../../images/screenshots/GalaxyEdits.png">
+<img src="../../images/screenshots/GalaxyEdits.png">
 </a>
 <figcaption>Editing data attributes</figcaption>
 </figure>
@@ -147,8 +147,8 @@ After you have the file on your computer, then:
 4. Press `Execute`
 
 <figure>
-<a href="../images/screenshots/GalaxyUpload.png">
-<img src="../images/screenshots/GalaxyUpload.png">
+<a href="../../images/screenshots/GalaxyUpload.png">
+<img src="../../images/screenshots/GalaxyUpload.png">
 </a>
 <figcaption>Uploading data to a Galaxy instance</figcaption>
 </figure>
@@ -156,8 +156,8 @@ After you have the file on your computer, then:
 Galaxy will start running, and a new entry will appear in the right history pane. The new entry it will be colored blue in your history as the file is uploaded to the server from your machine, and yellow as it is imported/analysed. Once the import is finished running successfully, it will turn green. You will seee the following screen and the  data will be in your current history, ready to use.
 
 <figure>
-<a href="../images/screenshots/GalaxyUploadResults.png">
-<img src="../images/screenshots/GalaxyUploadResults.png">
+<a href="../../images/screenshots/GalaxyUploadResults.png">
+<img src="../../images/screenshots/GalaxyUploadResults.png">
 </a>
 <figcaption>Results of uploading data to Galaxy from your desktop</figcaption>
 </figure>
@@ -178,8 +178,8 @@ You already uploaded a chromosome X gene dataset to Galaxy, representing all gen
 4. Press `Execute`. You should get a now have a new dataset in your history numbered as `3`. 
 
 <figure>
-<a href="../images/screenshots/GalaxyCutColumns.png">
-<img src="../images/screenshots/GalaxyCutColumns.png">
+<a href="../../images/screenshots/GalaxyCutColumns.png">
+<img src="../../images/screenshots/GalaxyCutColumns.png">
 </a>
 <figcaption>Cutting columns</figcaption>
 </figure>
@@ -195,8 +195,8 @@ It is always a good idea to rename your datasets as they are created to make sur
 For the purposes of this tutorial, we’ll be needing this dataset in `Interval` format. If you remember, the gene list is being represented in `BED` format. You can perform this kind of conversation of data formats right in the history section using the pencil tool. The `Cut` tool has probably already converted the dataset to `Interval`, but have a look at the options available.
 
 <figure>
-<a href="../images/screenshots/GalaxyFormatConversion.png">
-<img src="../images/screenshots/GalaxyFormatConversion.png">
+<a href="../../images/screenshots/GalaxyFormatConversion.png">
+<img src="../../images/screenshots/GalaxyFormatConversion.png">
 </a>
 <figcaption>Converting between data formats</figcaption>
 </figure>
@@ -219,8 +219,8 @@ Now let’s filter our data to only contain short genes, i.e. those that have a 
 4. Click on `Execute`. 
 
 <figure>
-<a href="../images/screenshots/GalaxyFilter.png">
-<img src="../images/screenshots/GalaxyFilter.png">
+<a href="../../images/screenshots/GalaxyFilter.png">
+<img src="../../images/screenshots/GalaxyFilter.png">
 </a>
 <figcaption>Filter genes by their number of exons (exon count)</figcaption>
 </figure>
@@ -247,8 +247,8 @@ We can find this kind of data in the [UCSC Table Browser](http://genome.ucsc.edu
 7.  On the final line, click `Get output` 
 
 <figure>
-<a href="../images/screenshots/GalaxyUCSCTables.png">
-<img src="../images/screenshots/GalaxyUCSCTables.png">
+<a href="../../images/screenshots/GalaxyUCSCTables.png">
+<img src="../../images/screenshots/GalaxyUCSCTables.png">
 </a>
 <figcaption>Acquiring lists of SNPs form the UCSC Genome Browser</figcaption>
 </figure>
@@ -256,8 +256,8 @@ We can find this kind of data in the [UCSC Table Browser](http://genome.ucsc.edu
 Finally, on the next page, leave all the options at their default settings and click on the `Send query to Galaxy` button. 
 
 <figure>
-<a href="../images/screenshots/GalaxyUCSCSend.png">
-<img src="../images/screenshots/GalaxyUCSCSend.png">
+<a href="../../images/screenshots/GalaxyUCSCSend.png">
+<img src="../../images/screenshots/GalaxyUCSCSend.png">
 </a>
 <figcaption>Executing an UCSC table query</figcaption>
 </figure>
@@ -265,8 +265,8 @@ Finally, on the next page, leave all the options at their default settings and c
 Initially the new entry in your history will be colored grey, meaning it is scheduled to run, and will turn yellow as it is imported/analysed. As before, once it finishes running successfully, it will turn green and the data will be in your history, ready to use. 
 
 <figure>
-<a href="../images/screenshots/GalaxyUCSCHistory.png">
-<img src="../images/screenshots/GalaxyUCSCHistory.png">
+<a href="../../images/screenshots/GalaxyUCSCHistory.png">
+<img src="../../images/screenshots/GalaxyUCSCHistory.png">
 </a>
 <figcaption>UCSC import in the history panel</figcaption>
 </figure>
@@ -285,8 +285,8 @@ Our goal has been to find potential eQTLs, using SNPs in promoters as an initial
 5. Click `Execute`
 
 <figure>
-<a href="../images/screenshots/GalaxyGetFlanks.png">
-<img src="../images/screenshots/GalaxyGetFlanks.png">
+<a href="../../images/screenshots/GalaxyGetFlanks.png">
+<img src="../../images/screenshots/GalaxyGetFlanks.png">
 </a>
 <figcaption>Get flanking regions</figcaption>
 </figure>
@@ -299,8 +299,8 @@ You can now rename the resulting new dataset to something like “Flanks 500bp u
 6. Click `Execute`
 
 <figure>
-<a href="../images/screenshots/GalaxyJoin.png">
-<img src="../images/screenshots/GalaxyJoin.png">
+<a href="../../images/screenshots/GalaxyJoin.png">
+<img src="../../images/screenshots/GalaxyJoin.png">
 </a>
 <figcaption>Joined data sets</figcaption>
 </figure>
@@ -310,8 +310,8 @@ Remember to rename the new dataset. Here I'll just call it "SNP-promoter overlap
 This list contains our potential eQTLs and genomic information about them. Let’s click on the eye button and see what this data tells us. If the data does not fit the center pane very well, you can always resize the side panes by dragging your mouse over the pane edges. You can also hide panes by clicking on the pane edges. Let’s hide the right history pane so that we view the data clearly. 
 
 <figure>
-<a href="../images/screenshots/GalaxyJoinResults.png">
-<img src="../images/screenshots/GalaxyJoinResults.png">
+<a href="../../images/screenshots/GalaxyJoinResults.png">
+<img src="../../images/screenshots/GalaxyJoinResults.png">
 </a>
 <figcaption>Results of the join operation</figcaption>
 </figure>
@@ -330,16 +330,16 @@ A picture is worth a thousand words. With gigabytes of genomic data one of the b
 Any time that you have a file in BED format (this is the format that we downloaded the data from the UCSC Table Browser as well as the data you imported), you can instantly visualize it using the [UCSC Genome Browser](http://genome.ucsc.edu/cgi-bin/hgGateway), and this functionality is integrated into Galaxy. Our first dataset that we uploaded to Galaxy was the set of coordinates for UCSC genes from chromosome X. Go back down in your history until you find this dataset:
 
 <figure>
-<a href="../images/screenshots/GalaxyDisplayInUCSC.png">
-<img src="../images/screenshots/GalaxyDisplayInUCSC.png">
+<a href="../../images/screenshots/GalaxyDisplayInUCSC.png">
+<img src="../../images/screenshots/GalaxyDisplayInUCSC.png">
 </a>
 <figcaption>Visualization options</figcaption>
 </figure>
 You can see right under the title that the format is “bed”, so it can be easily visualized from this box. You will see a line which says `display at UCSC`. Click on `Main`. This will open up a new internet browser window or tab which will take you directly to the UCSC Genome Browser where you can view the data that we have just uploaded. 
 
 <figure>
-<a href="../images/screenshots/UCSCView.png">
-<img src="../images/screenshots/UCSCView.png">
+<a href="../../images/screenshots/UCSCView.png">
+<img src="../../images/screenshots/UCSCView.png">
 </a>
 <figcaption>Visualizaton results in UCSC</figcaption>
 </figure>
@@ -364,8 +364,8 @@ Once the job finishes running, click on `Display at UCSC: Main` as we did in the
 and click `Jump`. Now you should see a browser view similar to the screenshot: 
 
 <figure>
-<a href="../images/screenshots/UCSCCustomTracks.png">
-<img src="../images/screenshots/UCSCCustomTracks.png">
+<a href="../../images/screenshots/UCSCCustomTracks.png">
+<img src="../../images/screenshots/UCSCCustomTracks.png">
 </a>
 <figcaption>Custom view for UCSC</figcaption>
 </figure>
@@ -379,8 +379,8 @@ Go ahead an experiment with the genome browser and see what it has to offer. You
 When you're finished with an analysis, it is always a good idea to give your history a meaningful name. 
 
 <figure>
-<a href="../images/screenshots/GalaxyNaming.png">
-<img src="../images/screenshots/GalaxyNaming.png">
+<a href="../../images/screenshots/GalaxyNaming.png">
+<img src="../../images/screenshots/GalaxyNaming.png">
 </a>
 <figcaption>Renaming entries in your history</figcaption>
 </figure>
@@ -388,8 +388,8 @@ When you're finished with an analysis, it is always a good idea to give your his
 All you have to do is click above the history where it might say “Unnamed History” and type in something you like. You can also add tags by clicking on the white “tags” button to the right. Tags are short keywords that allow you to easily find histories in the future once you start getting swamped in your own histories. You can include something like “chrX” or “DNase”. 
 
 <figure>
-<a href="../images/screenshots/GalaxyTags.png">
-<img src="../images/screenshots/GalaxyTags.png">
+<a href="../../images/screenshots/GalaxyTags.png">
+<img src="../../images/screenshots/GalaxyTags.png">
 </a>
 <figcaption>Tagging histories</figcaption>
 </figure>
@@ -397,16 +397,17 @@ All you have to do is click above the history where it might say “Unnamed Hist
 Keep in mind your history **only persists if you are logged in**. If you click on `Options` above the history pane, you will see a long list of really useful options that you wouldn’t have access to if you hadn’t logged in. Here you can select to view all of your saved histories, convert a history to a workflow, share your history with others, see deleted datasets and many other useful things. Click on `Saved histories`.
 
 <figure>
-<a href="../images/screenshots/GalaxyHistories.png">
-<img src="../images/screenshots/GalaxyHistories.png">
+<a href="../../images/screenshots/GalaxyHistories.png">
+<img src="../../images/screenshots/GalaxyHistories.png">
 </a>
 <figcaption>Storing histories</figcaption>
 </figure>
-This should bring you to a list that looks like this: 
+
+This should bring you to a list that looks like this: 
 
 <figure>
-<a href="../images/screenshots/GalaxyHistoryList.png">
-<img src="../images/screenshots/GalaxyHistoryList.png">
+<a href="../../images/screenshots/GalaxyHistoryList.png">
+<img src="../../images/screenshots/GalaxyHistoryList.png">
 </a>
 <figcaption>View of your histories</figcaption>
 </figure>
@@ -414,8 +415,8 @@ Keep in mind your history **only persists if you are logged in**. If you click o
 This will show you all of the histories that you have under your user account, the number of datasets per history, their tags and how large they are on disk together with other time stamp information. You can manage your histories here. Next to our only history name “lab1”, there is a small arrow. If you click on it, you will get a menu with several options: Select `Share or Publish`.
 
 <figure>
-<a href="../images/screenshots/GalaxyShare.png">
-<img src="../images/screenshots/GalaxyShare.png">
+<a href="../../images/screenshots/GalaxyShare.png">
+<img src="../../images/screenshots/GalaxyShare.png">
 </a>
 <figcaption>Pubishing histories</figcaption>
 </figure>
@@ -466,4 +467,4 @@ The exercise for this session is another Galaxy workflow to obtain SNP informati
 [^4]: Look under the `Variation and Repeats` group. Select `Common SNPs (132)`.
 [^5]: Do any of the exon IDs in the joined dataset occur more than once? 
 [^6]: Use the `Join` tool and join by exon ID. Remember to place the dataset with the ordered count values first (on the left) when performing the join. Remember that ordering is important when joining datasets. 
-[^7]: Make sure that you have the correct SNP dataset that you chose in the beginning displayed in the UCSC genome browser. Default settings may not be appropriate. 
+[^7]: Make sure that you have the correct SNP dataset that you chose in the beginning displayed in the UCSC genome browser. Default settings may not be appropriate. 
