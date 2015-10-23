@@ -51,8 +51,10 @@ The libraries for this dataset are stranded and were generated using the dUTP me
 
 
 ### Exploring the FASTQ files
-Open up Galaxy from your machine as before, start up a new blank history and give it a name. In the top menu, move your mouse cursor over `Shared data` and select `Data libraries`. This allows you to import files into Galaxy that have been shared with you.
-Browse to the `RNA-Seq` entry, open the`Sequence and reference data` folder and mouse over the arrow to the right of the filename `Mov10oe1.fastq`. In the context menu select `Import this dataset into selected histories`. Move back to the `Analyze Data` menu.
+
+Open up Galaxy from your machine as before, start up a new blank history and give it a name. In the top menu, move your mouse cursor over `Shared data` and select `Data libraries`. This allows you to import files into Galaxy that have been shared with you.
+
+Browse to the `RNA-Seq` entry, open the`Sequence and reference data` folder and mouse over the arrow to the right of the filename `Mov10oe1.fastq`. In the context menu select `Import this dataset into selected histories`. Move back to the `Analyze Data` menu.
 
 This is the kind of data you would expect to receive from your sequencing core facility: a large number of short nucleotide reads in [FASTQ format](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/Nucleic%20Acids%20Res%202009%20Cock.pdf) (PDF). 
 
@@ -62,7 +64,11 @@ This is the kind of data you would expect to receive from your sequencing core f
 
 The FASTQ file contains output reads from the sequencer that need to be mapped to a reference genome for us to understand where those reads came from on the sequenced genome. However, before we can delve into read mapping, we first need to make sure that our preliminary data is of sufficiently high quality. This involves several steps:
 
-1. Obtaining summary quality statistics on the reads and review diagnostic graphs 2. Eliminate sequencing artifacts3. Filter out genetic contaminants (primers, vectors, adaptors)4. Filter out low-quality reads5. Recalculate quality statistics and review diagnostic plots on filtered data
+1. Obtaining summary quality statistics on the reads and review diagnostic graphs 
+2. Eliminate sequencing artifacts
+3. Filter out genetic contaminants (primers, vectors, adaptors)
+4. Filter out low-quality reads
+5. Recalculate quality statistics and review diagnostic plots on filtered data
 
 Iterate through steps 2-5 until the data is of sufficient quality before proceeding to mapping.
 
@@ -126,13 +132,15 @@ If for some reason any of the previous steps did not work you can retrieve a qua
 Next we are going to look at the steps we need to take once we have a clean, filtered FASTQ file that is ready for alignment. Use the filtered FASTQ file that you prepared in the previous section. The alignment process consists of the following steps:
 
 * Choose an appropriate reference genome to map your reads against
-* Choose an appropriate gene annotation model to guide your alignment* Perform the read alignment
+* Choose an appropriate gene annotation model to guide your alignment
+* Perform the read alignment
 
 ### Load the filtered FASTQ file and Reference Genome
 
 To avoid excessive runtimes during later steps we will not align the reads against the whole human genome, just _chr1_. We have retrieved the sequence for this chromosome from UCSC GoldenPath (hg19) and added it to the `Data Library`. This means we won't use the pre-built genome indices, but submit our own reference sequence. We are also using only a subset of reads from a single sample for the next few steps. 
 
-1. Start up a new blank history and give it a name.2. Either load your filtered FASTQ files from the previous tutorial, or download a filtered FASTQ file from the Shared Data Libraries in Galaxy. 
+1. Start up a new blank history and give it a name.
+2. Either load your filtered FASTQ files from the previous tutorial, or download a filtered FASTQ file from the Shared Data Libraries in Galaxy. 
 3. Find the chromosome 1 genomic sequence in `RNA-Seq`, `Sequence and Reference Data` as `chr1.fa` and import it into your new history. 
 
 Using it generates a slight time overhead since the reference genome needs to be indexed prior to each alignment run, but this is acceptable for now. 
@@ -212,7 +220,7 @@ Next, add the TopHat generated `splice junctions` (BED format). As Galaxy does n
 
 > You can do the same to import the `chr1-hg19_genes.gtf` UCSC gene model into IGV, though the IGV RefSeq track should suffice to get a sense of the known gene models. 
 
-If you have moved around in the browser navigate back to MADCAM1. You should now see the the putative splice junctions (highlighted track)…
+If you have moved around in the browser navigate back to MOV10. You should now see the the putative splice junctions (highlighted track)…
 
 [![Junctions](../../images/screenshots/IGV_RNA_4.png)](../../images/screenshots/IGV_RNA_4.png)
 
