@@ -51,10 +51,8 @@ The libraries for this dataset are stranded and were generated using the dUTP me
 
 
 ### Exploring the FASTQ files
-
-Open up Galaxy from your machine as before, start up a new blank history and give it a name. In the top menu, move your mouse cursor over `Shared data` and select `Data libraries`. This allows you to import files into Galaxy that have been shared with you.
-
-Browse to the `RNA-Seq` entry, open the`Sequence and reference data` folder and mouse over the arrow to the right of the filename `Mov10oe1.fastq`. In the context menu select `Import this dataset into selected histories`. Move back to the `Analyze Data` menu.
+Open up Galaxy from your machine as before, start up a new blank history and give it a name. In the top menu, move your mouse cursor over `Shared data` and select `Data libraries`. This allows you to import files into Galaxy that have been shared with you.
+Browse to the `RNA-Seq` entry, open the`Sequence and reference data` folder and mouse over the arrow to the right of the filename `Mov10oe1.fastq`. In the context menu select `Import this dataset into selected histories`. Move back to the `Analyze Data` menu.
 
 This is the kind of data you would expect to receive from your sequencing core facility: a large number of short nucleotide reads in [FASTQ format](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/Nucleic%20Acids%20Res%202009%20Cock.pdf) (PDF). 
 
@@ -64,11 +62,7 @@ This is the kind of data you would expect to receive from your sequencing core f
 
 The FASTQ file contains output reads from the sequencer that need to be mapped to a reference genome for us to understand where those reads came from on the sequenced genome. However, before we can delve into read mapping, we first need to make sure that our preliminary data is of sufficiently high quality. This involves several steps:
 
-1. Obtaining summary quality statistics on the reads and review diagnostic graphs 
-2. Eliminate sequencing artifacts
-3. Filter out genetic contaminants (primers, vectors, adaptors)
-4. Filter out low-quality reads
-5. Recalculate quality statistics and review diagnostic plots on filtered data
+1. Obtaining summary quality statistics on the reads and review diagnostic graphs 2. Eliminate sequencing artifacts3. Filter out genetic contaminants (primers, vectors, adaptors)4. Filter out low-quality reads5. Recalculate quality statistics and review diagnostic plots on filtered data
 
 Iterate through steps 2-5 until the data is of sufficient quality before proceeding to mapping.
 
@@ -132,15 +126,13 @@ If for some reason any of the previous steps did not work you can retrieve a qua
 Next we are going to look at the steps we need to take once we have a clean, filtered FASTQ file that is ready for alignment. Use the filtered FASTQ file that you prepared in the previous section. The alignment process consists of the following steps:
 
 * Choose an appropriate reference genome to map your reads against
-* Choose an appropriate gene annotation model to guide your alignment
-* Perform the read alignment
+* Choose an appropriate gene annotation model to guide your alignment* Perform the read alignment
 
 ### Load the filtered FASTQ file and Reference Genome
 
 To avoid excessive runtimes during later steps we will not align the reads against the whole human genome, just _chr1_. We have retrieved the sequence for this chromosome from UCSC GoldenPath (hg19) and added it to the `Data Library`. This means we won't use the pre-built genome indices, but submit our own reference sequence. We are also using only a subset of reads from a single sample for the next few steps. 
 
-1. Start up a new blank history and give it a name.
-2. Either load your filtered FASTQ files from the previous tutorial, or download a filtered FASTQ file from the Shared Data Libraries in Galaxy. 
+1. Start up a new blank history and give it a name.2. Either load your filtered FASTQ files from the previous tutorial, or download a filtered FASTQ file from the Shared Data Libraries in Galaxy. 
 3. Find the chromosome 1 genomic sequence in `RNA-Seq`, `Sequence and Reference Data` as `chr1.fa` and import it into your new history. 
 
 Using it generates a slight time overhead since the reference genome needs to be indexed prior to each alignment run, but this is acceptable for now. 
@@ -203,15 +195,14 @@ Also take a look at the other reports.
 Take a look at your alignment in IGV (Integrative Genomics Viewer). To do so, first expand the alignment result (the `accepted hits` BAM file) in your history and click on the `web current` link beside `display with IGV`. This will download IGV to your machine. It should start automatically after a few security warnings (if not, find the `igv.jlnp` file and click it yourself).
 
 You should see a window that looks like this:
-[![IGV Startup](../../images/screenshots/IGV_RNA_1.png)](../../images/screenshots/IGV_RNA_1.png)
 
 [![IGV Startup](../../images/screenshots/IGV_RNA_1.png)](../../images/screenshots/IGV_RNA_1.png)
 
-Click in the highlighted window…
-
+Click in the search bar and enter the gene name MOV10:
+ 
 [![Highlight](../../images/screenshots/IGV_RNA_2.png)](../../images/screenshots/IGV_RNA_2.png)
 
-… and enter the gene name MOV10. You should now be able to see the individual reads, you can zoom in further using the controls on the upper right and scroll around by clicking and dragging in the highlighted alignment track. Note that IGV automatically translated the gene symbol into the matching genomic coordinates for your genome build:
+You should now be able to see the individual reads, you can zoom in further using the controls on the upper right and scroll around by clicking and dragging in the highlighted alignment track. Note that IGV automatically translated the gene symbol into the matching genomic coordinates for your genome build:
 
 [![Sample Gene](../../images/screenshots/IGV_RNA_3.png)](../../images/screenshots/IGV_RNA_3.png)
 
@@ -355,7 +346,7 @@ Some frameworks allow for a more interaction exploration of RNA-Seq-based count 
 
 We need to specify to Degust which samples belong to which groups. Click on `Add condition`, and give the condition a name (i.e., Ctrl) and from the drop-down menu select the appropriate samples. Do the same for Mov10 Add the `Gene Link` column if you want to, then `Save changes` will save the configuration and press `View` to generate results. You should be directed to a window that looks similar to the screenshot below:
 
-[![Degust](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_degust.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_degust.png)
+[![Degust](../../images/screenshots/mov10_degust.png)](../../images/screenshots/mov10_degust.png)
 
 * At the very top you will find an MA plot showing expression for two conditions. Each dot represents a gene and is color-coded by FDR (red = more significant). You can click and drag on the plot to select genes within a rectangle - the heatmap and table below will be filtered to only those genes. 
 * The heatmap shows the log fold-change for each gene shown in the MA plot above. Each vertical strip corresponds to a gene. Hovering the mouse over the heatmap will show the corresponding gene in the plot above
@@ -378,7 +369,7 @@ Since there's relatively little we can get in terms of functional enrichment giv
 * Cut and paste the gene symbols into the g:Profiler `Query` box; take your time explore some of the additional options
 * Click on `g:Profile!`
 
-[![g:Profiler](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_gprofiler.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_gprofiler.png)
+[![g:Profiler](../../images/screenshots/mov10_gprofiler.png)](../../images/screenshots/mov10_gprofiler.png)
 
 > Explore the results. The output is a spreadsheet with enrichment of GO terms, pathway / disease enrichments, miRNA and TF-targets as well as a basic visualization. It is also worthwhile to capture the gene names and descriptions table.
 
@@ -386,7 +377,7 @@ To provide additional graphic representations you can fall back to [Revigo](http
 
 > Time permitting, extract the GO identifiers obtained from g:Profile and import them into Revigo. You probably want to switch the g:Profiler output from `Graphical (PNG)` to `Excel spreadhseet (XLS)` to be able to select GO identifiers and -- optionally -- p-values. 
 
-[![Revigo](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_revigo.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_revigo.png)
+[![Revigo](../../images/screenshots/mov10_revigo.png)](../../images/screenshots/mov10_revigo.png)
 
 ### Network-based
 
@@ -401,17 +392,17 @@ There are almost too many network-based tools out there, but [GeneMania](http://
 
 Navigate to the GeneMania website and cut and paste your identifiers again, making sure you pick `H. sapiens` as species. Open the advanced options and decide what kind of interaction information you would like to use to connect the genes in your list:
 
-[![GeneMania](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_genemania.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_genemania.png)
+[![GeneMania](../../images/screenshots/mov10_genemania.png)](../../images/screenshots/mov10_genemania.png)
 
 GeneMania enables you to add 'related' or linker genes to the results. Those are genes that were not present in your input list, but connect your genes in some way:
 
-[![Linker](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_genemania_linker.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/mov10_genemania_linker.png)
+[![Linker](../../images/screenshots/mov10_genemania_linker.png)](../../images/screenshots/mov10_genemania_linker.png)
 
 Pick a number and click on `Go`. 
 
 > Explore the reporting functionality as well as how the enrichment terms change depending on whether you added linker genes or not, or in relation to the interaction information used.
 
-That's it! You went from a number of FASTQ files (your primary data) all the way to a list of enriched biological functions in the matter of a few hours. Next, we recommend that you take the time to explore the reading and resources section and start working with your own data. Please do [contact us](http://compbio.sph.harvard.edu/chb/contact) with questions, comments and feedback.
+That's it! You went from a number of FASTQ files (your primary data) all the way to a list of enriched biological functions in the matter of a few hours. Next, we recommend that you take the time to explore the reading and resources section and start working with your own data. Please do [contact us](mailto:bioinformatics@hsph.harvard.edu) with questions, comments and feedback.
 
 
 
