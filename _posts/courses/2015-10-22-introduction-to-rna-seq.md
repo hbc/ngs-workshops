@@ -47,7 +47,7 @@ From this study we are using the [RNA-Seq](http://www.ncbi.nlm.nih.gov/geo/query
 The libraries for this dataset are stranded and were generated using the dUTP method. Sequencing was carried out on the Illumina HiSeq-2500 for 100bp single end reads. The full dataset was sequenced to ~40 million reads per sample, but for this workshop we will be looking at a small subset on chr1 (~300,000 reads/sample) to keep things manageable and allow algorithms to finish within a few minutes. We will switch over to using all samples for the differential expression analysis by retrieving them from the `Data Libraries` in the `Shared Data` menu as needed.For each group we have three replicates as described in the figure below.
 
 
-![Experimental_design](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/exp_design.png)
+![Experimental_design](../../images/screenshots/exp_design.png)
 
 
 ### Exploring the FASTQ files
@@ -196,15 +196,15 @@ Take a look at your alignment in IGV (Integrative Genomics Viewer). To do so, fi
 
 You should see a window that looks like this:
 
-[![IGV Startup](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_1.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_1.png)
+[![IGV Startup](../../images/screenshots/IGV_RNA_1.png)](../../images/screenshots/IGV_RNA_1.png)
 
 Click in the highlighted window…
 
-[![Highlight](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_2.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_2.png)
+[![Highlight](../../images/screenshots/IGV_RNA_2.png)](../../images/screenshots/IGV_RNA_2.png)
 
 … and enter the gene name MOV10. You should now be able to see the individual reads, you can zoom in further using the controls on the upper right and scroll around by clicking and dragging in the highlighted alignment track. Note that IGV automatically translated the gene symbol into the matching genomic coordinates for your genome build:
 
-[![Sample Gene](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_3.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_3.png)
+[![Sample Gene](../../images/screenshots/IGV_RNA_3.png)](../../images/screenshots/IGV_RNA_3.png)
 
 > Can you find any reads that span an intron (i.e. the read is derived from processed RNA)?
 
@@ -214,7 +214,7 @@ Next, add the TopHat generated `splice junctions` (BED format). As Galaxy does n
 
 If you have moved around in the browser navigate back to MADCAM1. You should now see the the putative splice junctions (highlighted track)…
 
-[![Junctions](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_4.png)](https://dl.dropboxusercontent.com/u/204381225/Galaxy_nanocourses/IGV_RNA_4.png)
+[![Junctions](../../images/screenshots/IGV_RNA_4.png)](../../images/screenshots/IGV_RNA_4.png)
 
 ... in addition to the mapped reads and gene model (which can serve as an internal control). 
 
