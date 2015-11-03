@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction to RNA-Seq"
+title: "Introduction to RNA-Seq - updated"
 modified:
 categories: courses
 excerpt:
