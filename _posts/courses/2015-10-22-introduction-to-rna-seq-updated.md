@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Introduction to RNA-Seq - updated"
+title: "Updated - Introduction to RNA-Seq"
 modified:
 categories: courses
 excerpt:
 tags: [ngs, rna, introduction, galaxy, qc, alignment, de]
 image:
   feature:
-date: 2014-11-01T01:11:42-04:00
+date: 2015-10-22
 ---
 
 <section id="table-of-contents" class="toc">
