@@ -94,7 +94,7 @@ Depending on your FASTQ results you may need to test for contamination (either b
 
 Not all required tools are available through Galaxy just yet. For example, depending on the source of your data you probably want to screen your reads for vector or adapter contamination using tools such as [SeqTrim](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/BMC%20Bioinformatics%202010%20Falgueras.pdf) (PDF). Other tools check for sample cross-contamination ([ContEst](https://dl.dropbox.com/u/407047/Blog/Documents/Literature/QC/Bioinformatics%202011%20Cibulskis.pdf) (PDF)) or contamination with data from other species ([FASTQ Screen](http://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/)).  For now we will just explore how you can spot potential contamination from the FastQC results alone. 
 
-> Where is the most overrepresented sequence in your FastQC results from the h1-hESC sample coming from?
+> Where is the most overrepresented sequence in your FastQC results from the Mov10oe1 sample coming from?
 
 Compare your own FastQC results with a [pre-generated FastQC summary](http://dl.dropbox.com/u/4253254/Training/HSCI_Workshop/D19VHACXX_s1_0_illumina12index_12_SL17357_fastqc/fastqc_report.html) that highlights a potential problem.
 
