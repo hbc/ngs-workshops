@@ -22,7 +22,7 @@ date: 2014-11-20T01:11:42-04:00
 
 This session provides a basic introduction to conducting a ChIP-seq analysis using the Galaxy framework. Some material has been borrowed [Morgane Thomas-Chollier’s ChIP-seq tutorial](http://ngs.molgen.mpg.de/ngsuploads/Cornelius/ESGI/Chip.htm) and [Galaxy workflow](http://main.g2.bx.psu.edu/u/morgane/h/fromreadstopeaks), and the [Princeton HTSEQ Users Tutorial](https://sites.google.com/site/princetonhtseq/tutorials/chip-seq).  
 
-<br>A pdf of step-by-step snapshots for these course materials is available [here](https://www.dropbox.com/s/lyvtcle4tgigevt/introtochipseq_snapshots.pdf?dl=0).
+<br>A pdf of step-by-step snapshots for these course materials is available [here](https://www.dropbox.com/s/52p07dyh3dmjdtn/introtochipseq_snapshots.pdf?dl=0).
 
 ### Course scope
 {:.no_toc}
@@ -38,7 +38,7 @@ Before tackling the modules below you should have a [working knowledge of Galaxy
 
 In order for you to be able to access Galaxy on your assigned dedicated machine on the Cloud, you have been given a web or IP address in the form of A.B.C.D where A, B, C and D are numbers separated by dots. You will find the current IP address at the top of our [resource page]({{ site.baseurl }}/resources). You will need it in order to access Galaxy from the web browser on your laptop. 
 
-> If you want to work through this session outside of this course, take a look at our section on [how to set up your own Galaxy server]({{ site.baseurl }}/courses/running-your-own-galaxy-instance/) or download the [complete introduction dataset](https://dl.dropboxusercontent.com/u/407047/Blog/Data/ChIP-Seq%20Data.zip) and use one of the public Galaxy instances.
+> If you want to work through this session outside of this course, take a look at our section on [how to set up your own Galaxy server](http://bioinformatics.sph.harvard.edu/ngs-workshops/posts/running-your-own-galaxy-instance/) or download the [complete introduction dataset](https://www.dropbox.com/s/ksywyssn27ngej0/ChIP-Seq%20Data.zip?dl=0) and use one of the public Galaxy instances.
 
 ## Background
 
